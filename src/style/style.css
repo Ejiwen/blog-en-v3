@@ -1,0 +1,18 @@
+/*
+ rgb(175, 41, 41);
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: "#4D5362"; }
+
+header {
+  height: 86vh;
+  background-color: #7ed56f; }
