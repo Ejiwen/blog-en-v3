@@ -20,7 +20,6 @@ const Header = () => {
        <FontAwesomeIcon icon={faGithubSquare} size="lg"  />
        <FontAwesomeIcon icon={faDev} size="lg"  />
        </div>
-       <img src="./images/header.svg" height="500px" width="500px" />
        </header> 
    )
 }
