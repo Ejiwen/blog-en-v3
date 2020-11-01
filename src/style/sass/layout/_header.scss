@@ -1,7 +1,6 @@
 header {
     min-height: 800px;
-    background:  url("../../static/images/header2.svg") no-repeat top center;
-    background-size: cover;
+   
     padding: 20px 40px;
     display: flex;
     flex-direction: row;
@@ -20,5 +19,13 @@ header {
     }
 }
 
+.container-fluid {
+    //background-color: red;
+    background:  url("../../static/images/header2.svg") repeat-x;
+    background-size: contain;
+    height: 75vh;
+    border: solid red 1px;
+    background-color: #f4c330d0;
+}
 
 /* fa-codepen */
