@@ -1,11 +1,11 @@
 header {
     height: 90vh;
-    background: url("../../static/images/coverbase5.svg") top center; //coverbase5 cheese #BD5B1A
+    background: url("../../static/images/header-mr.svg") top center; //coverbase5 cheese #BD5B1A
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     .navbar{
-        background-color: #bd5b1ab2;
+        background-color: #0f3a07b2; // #bd5b1ab2
         height: 50px;
     nav {
         display: flex;
@@ -24,6 +24,32 @@ header {
 
     }
 }
+
+    .my-bio-container {
+        display: flex;
+        height: 100%;
+        .my-bio {  
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #1b3803;
+            h3 {
+                margin: 0;
+                font-size: 50px;
+                font-weight: bolder;
+            }
+            p {
+                margin: 0;
+            }
+
+            &--role {
+             font-weight: 700;
+             letter-spacing: 3.1px;
+            }
+        }
+    }
 
 }
 

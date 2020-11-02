@@ -19,9 +19,11 @@ const Header = () => {
 
        <div className="my-bio-container">
        <div className="my-bio">
+           <div>
            <p> Hi, My name is </p>
            <h3>CHEIKHANY EJIWEN</h3>
-           <p>Freelance Web Developer in san francisco</p>
+           <p className="my-bio--role">Freelance Web Developer in san francisco</p>
+           </div>
        </div>
        </div>
        

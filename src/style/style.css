@@ -14,11 +14,11 @@ body {
 
 header {
   height: 90vh;
-  background: url("../../static/images/coverbase5.svg") top center;
+  background: url("../../static/images/header-mr.svg") top center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   header .navbar {
-    background-color: #bd5b1ab2;
+    background-color: #0f3a07b2;
     height: 50px; }
     header .navbar nav {
       display: flex;
@@ -31,6 +31,25 @@ header {
       header .navbar nav ul li {
         display: inline-block;
         padding-left: 15px; }
+  header .my-bio-container {
+    display: flex;
+    height: 100%; }
+    header .my-bio-container .my-bio {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #1b3803; }
+      header .my-bio-container .my-bio h3 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: bolder; }
+      header .my-bio-container .my-bio p {
+        margin: 0; }
+      header .my-bio-container .my-bio--role {
+        font-weight: 700;
+        letter-spacing: 3.1px; }
 
 /*
 linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.541))  , 
