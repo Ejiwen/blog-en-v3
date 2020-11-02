@@ -1,31 +1,32 @@
 header {
-    min-height: 800px;
-   
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 90vh;
+    background: url("../../static/images/coverbase5.svg") top center; //coverbase5 cheese #BD5B1A
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    .navbar{
+        background-color: #bd5b1ab2;
+        height: 50px;
     nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        max-width: 1300px;
+        margin: auto;
+        color: #e9e5ba;
         ul {
             li {
                 display: inline-block;
                 padding-left: 15px;
             }
         }
-    }
 
-    .cnt-social-media{
-        
     }
 }
 
-.container-fluid {
-    //background-color: red;
-    background:  url("../../static/images/header2.svg") repeat-x;
-    background-size: contain;
-    height: 75vh;
-    border: solid red 1px;
-    background-color: #f4c330d0;
 }
 
-/* fa-codepen */
+/*
+linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.541))  , 
+*/

@@ -13,20 +13,25 @@ body {
   color: "#4D5362"; }
 
 header {
-  min-height: 800px;
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  header nav ul li {
-    display: inline-block;
-    padding-left: 15px; }
+  height: 90vh;
+  background: url("../../static/images/coverbase5.svg") top center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  header .navbar {
+    background-color: #bd5b1ab2;
+    height: 50px; }
+    header .navbar nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      max-width: 1300px;
+      margin: auto;
+      color: #e9e5ba; }
+      header .navbar nav ul li {
+        display: inline-block;
+        padding-left: 15px; }
 
-.container-fluid {
-  background: url("../../static/images/header2.svg") repeat-x;
-  background-size: contain;
-  height: 75vh;
-  border: solid red 1px;
-  background-color: #f4c330d0; }
-
-/* fa-codepen */
+/*
+linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.541))  , 
+*/

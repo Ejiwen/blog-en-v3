@@ -1,46 +1,12 @@
 import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faDev, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Container} from 'react-bootstrap'
 
 const Header = () => {
    return (
-    <Container>
-  <Navbar collapseOnSelect expand="lg" variant="dark">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar></Container>
-   )
-}
+    <header>
 
-export default Header;
-
-
-
-/*
-
-<header>
-       <div>LOGO</div>
+       <div className="navbar">
        <nav>
+       <div className="logo-header">LOGO</div>
            <ul>
                <li>Home</li>
                <li>Writing</li>
@@ -49,11 +15,29 @@ export default Header;
                <li>Contact</li>
            </ul>
        </nav>
+       </div>
+
+       <div className="my-bio-container">
+       <div className="my-bio">
+           <p> Hi, My name is </p>
+           <h3>CHEIKHANY EJIWEN</h3>
+           <p>Freelance Web Developer in san francisco</p>
+       </div>
+       </div>
+       
+    </header>
+
+   )
+}
+
+export default Header;
+
+/*
+        import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+       import { faDev, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
        <div className="cnt-social-media">
        <FontAwesomeIcon icon={faLinkedin} size="lg" />
        <FontAwesomeIcon icon={faGithubSquare} size="lg"  />
        <FontAwesomeIcon icon={faDev} size="lg"  />
-       </div>
-       </header> 
 
-*/
+ */
