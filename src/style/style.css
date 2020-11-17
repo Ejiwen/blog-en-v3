@@ -55,3 +55,11 @@ header {
 /*
 linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.541))  , 
 */
+.writing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1300px;
+  margin: auto;
+  color: #b3a510; }
