@@ -2,12 +2,14 @@ import React from 'react'
 import Header from './Header'
 import Writing from './Writing'
 
-const Layout = ({children}) => {
- return (
+const Layout = (data) => {
+   console.log("**************");
+    console.log(data);
+    console.log("**************");
+ return ( 
     <div>
          <Header />
-         <p> {children} </p>
-         <Writing />
+          <Writing {...data} />
          <h1> FOOTER </h1>
     </div>
  )

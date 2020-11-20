@@ -1,37 +1,21 @@
-import React from 'react';
-import { graphql } from 'gatsby'
+import React from 'react'
+import Post from './Post'
 
-const Writing = ({data}) => {
-    console.log(data);
+const Writing = ({allMdx:{nodes}}) => {
+  
+    console.log("-----------");
+    console.log(nodes);
+    console.log("-----------");
     return(
         <div className="writing">
-            test
-            <img src="images/writing1.svg" />
-            <div>
-
-            </div>
+            <img src="images/writing1.svg" />   
+             {
+             nodes.map(m => <Post key={m.id} info={m.excerpt} />)
+             }
         </div>
     )
 }
 
 
-export const query = graphql`
-  {
-    allMdx(sort: {order: DESC, fields: frontmatter___date}, limit: 2) {
-      nodes {
-        excerpt
-        frontmatter {
-          author
-          date(fromNow: true)
-          slug
-          title
-          category
-          readTime
-          
-        }
-      }
-    }
-  }
-`
 
 export default Writing;
