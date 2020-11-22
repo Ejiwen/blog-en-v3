@@ -3,7 +3,40 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
     color: #b3a510;
+}
+
+.post-zone{
+    margin-top: 90px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    background-color: #333333;
+}
+
+.post-pic {
+    min-height: 300px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card__svg {
+    position: absolute;
+    bottom: 0;
+}
+
+.post-body {
+    border: 1px solid rgb(0, 9, 128);
+    margin:10px;
+    
+}
+
+.post-info{
+    margin-top: 30px;
+    background: #333333;
 }

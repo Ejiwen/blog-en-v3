@@ -10,7 +10,7 @@ const Writing = ({allMdx:{nodes}}) => {
         <div className="writing">
             <img src="images/writing1.svg" />   
              {
-             nodes.map(m => <Post key={m.id} info={m.excerpt} />)
+             nodes.map(post => <Post key={post.id} {...post} />)
              }
         </div>
     )

@@ -10,7 +10,7 @@ export default function Home({data}) {
 
 export const query = graphql`
   {
-    allMdx(sort: {order: DESC, fields: frontmatter___date}, limit: 2) {
+    allMdx(sort: {order: DESC, fields: frontmatter___date}, limit: 3) {
       nodes {
         excerpt
         frontmatter {
