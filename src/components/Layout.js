@@ -1,14 +1,15 @@
 import React from 'react'
+import Footer from './Footer'
 import Header from './Header'
 import Writing from './Writing'
 
 const Layout = (data) => {
    
  return ( 
-    <div className="container">
+    <div className="page-container">
          <Header />
          <Writing {...data} />
-         <h1> FOOTER </h1>
+         <Footer />
     </div>
  )
 }

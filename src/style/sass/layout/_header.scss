@@ -1,9 +1,9 @@
 header {
-    height: 90vh;
-    width: 100vw;
-    background: url("../../static/images/header-mr.svg") top center; //coverbase5 cheese #BD5B1A
+    height: 85vh;
+    //width: 100vw;
+    background: url("../../static/images/header-mr2.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     // clip-path: polygon(100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0 0);
 
     .navbar{
