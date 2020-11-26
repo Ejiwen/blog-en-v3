@@ -5,7 +5,7 @@ const Post = ({ excerpt, frontmatter }) => {
   const { category, readTime, image, title } = frontmatter
   return (
 
-      <div className="post-body">
+      // <div className="post-body">
         <div className="post-content">
           <div className="post-pic">
             <Image fluid={image.childImageSharp.fluid} style={{position: "static"}} />
@@ -26,15 +26,14 @@ const Post = ({ excerpt, frontmatter }) => {
           </div>
 
           <div className="post-info">
-            <h3 className="post-info-title">{title} </h3>
-            <p className="post-info-intro">{excerpt}</p>
+            <div className="post-info-title">{title} </div>
+            <div><p className="post-info-intro">{excerpt}</p></div>
             <div className="post-info-tags">
             <span>{category}</span> <span>{readTime}</span>
-            
             </div>
           </div>
         </div>
-      </div>
+      // </div>
 
   )
 }

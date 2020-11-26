@@ -10,7 +10,7 @@ const Writing = ({allMdx:{nodes}}) => {
         <div className="wrap-writing">
         <div className="top-bg-writing"> </div>
         <div className="writing">
-            <img src="images/writing1.svg" />   
+            {/* <img src="images/writing1.svg" />    */}
              {
              nodes.map(post => <Post key={post.id} {...post} />)
              }

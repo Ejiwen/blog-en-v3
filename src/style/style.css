@@ -71,20 +71,28 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
 .writing {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: auto;
-  color: black; }
+  color: black;
+  flex-wrap: wrap; }
 
 .post-content {
   display: flex;
   flex-direction: column;
-  background-color: #E2E2E2; }
+  margin: 10px;
+  flex-basis: 300px; }
 
 .post-pic {
   min-height: 300px;
   box-sizing: border-box;
   position: relative; }
+  .post-pic img {
+    display: block;
+    border-bottom: 1px solid #ff000000;
+    border-left: 1px solid #ff000000;
+    border-right: 1px solid #ff000000;
+    border-radius: 10px; }
 
 .card__svg {
   position: absolute;
@@ -98,3 +106,6 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
 .post-info {
   background-color: #E2E2E2;
   padding: 0 8px 0 8px; }
+  .post-info-title {
+    color: #BD5B1A;
+    font-weight: bolder; }

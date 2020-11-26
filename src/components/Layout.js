@@ -1,6 +1,8 @@
 import React from 'react'
+import Experience from './Experience'
 import Footer from './Footer'
 import Header from './Header'
+import Projects from './Projects'
 import Writing from './Writing'
 
 const Layout = (data) => {
@@ -9,6 +11,8 @@ const Layout = (data) => {
     <div className="page-container">
          <Header />
          <Writing {...data} />
+         <Experience />
+         <Projects />
          <Footer />
     </div>
  )
