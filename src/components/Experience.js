@@ -4,7 +4,7 @@ const Experience = () => {
 
     const [cmps, setCmps] = useState([
         {
-          company: 'Kinross Gold Corporation',
+          company: 'Kinross Gold',
           experience: "- Provided engineering data and analysis - Organizing data in a way that serves the company benefits better.- Provides access to the data in useful ways.",
           open: true
         },
@@ -58,6 +58,7 @@ const Experience = () => {
                         </div>
                     ))
                 }
+                 
             </div>
         </div>
     )
