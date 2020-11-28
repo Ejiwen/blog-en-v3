@@ -109,3 +109,20 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   .post-info-title {
     color: #BD5B1A;
     font-weight: bolder; }
+
+.experience {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid red;
+  padding: 10px; }
+  .experience__menu {
+    padding: 15px;
+    flex-basis: 400px; }
+  .experience__content {
+    padding: 15px; }
+
+.hidePanel {
+  display: none; }

@@ -1,0 +1,22 @@
+.experience {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px;
+
+    &__menu {
+        padding: 15px;
+        flex-basis: 400px;
+    }
+
+    &__content {
+        padding: 15px;
+    }
+}
+
+.hidePanel {
+    display: none;
+}
