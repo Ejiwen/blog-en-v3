@@ -23,7 +23,7 @@ const Experience = () => {
 
       const toggleCMP = index => {
         
-        setCmps(cmps.map((cmp,i) => {
+        setCmps(cmps.map((cmp,i) => { 
 
             if(i===index) {
                 cmp.open = !cmp.open
