@@ -22,5 +22,11 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `252531542`,
+      },
+    },
   ],
 }

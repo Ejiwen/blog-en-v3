@@ -138,3 +138,18 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   .projects .project {
     display: flex;
     flex-direction: row; }
+
+footer {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0; }
+  footer .contact-me {
+    flex-basis: 500px; }
+    footer .contact-me__form {
+      display: flex;
+      flex-direction: column;
+      margin: 0; }

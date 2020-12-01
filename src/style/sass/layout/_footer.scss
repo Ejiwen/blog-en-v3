@@ -1,0 +1,20 @@
+footer {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+    .contact-me {
+        flex-basis: 500px;
+        &__form {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+}
+
+
