@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../../static/images/logoV2-top.svg"
 
 const Header = () => {
    return (
@@ -6,7 +7,7 @@ const Header = () => {
 
        <div className="navbar">
        <nav>
-       <div className="logo-header">LOGO</div>
+       <div className="logo-header"><img src={logo} /></div>
            <ul>
                <li>Home</li>
                <li>Writing</li>

@@ -1,13 +1,13 @@
 header {
     height: 85vh;
     //width: 100vw;
-    background: url("../../static/images/header-mr2.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
+    background: url("../../static/images/header-mr3.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
     background-size: cover;
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     // clip-path: polygon(100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0 0);
 
     .navbar{
-        background-color: #0f3a07b2; // #bd5b1ab2
+        background-color: #1b3803; // #bd5b1ab2
         height: 50px;
     nav {
         display: flex;
@@ -17,10 +17,22 @@ header {
         max-width: 1300px;
         margin: auto;
         color: #e9e5ba;
+        
         ul {
             li {
                 display: inline-block;
                 padding-left: 15px;
+            }
+        }
+
+        .logo-header {
+            img {
+                border-bottom: 10px solid #1b3803;
+                border-left: 2px solid #1b3803;
+                height: 40px;
+                box-sizing: content-box;
+                border-radius: 10px;
+                background-color: #1b3803;
             }
         }
 
@@ -41,6 +53,7 @@ header {
                 margin: 0;
                 font-size: 50px;
                 font-weight: bolder;
+                text-shadow: 2px 2px 3px #ffc25b;
             }
             p {
                 margin: 0;
@@ -50,6 +63,9 @@ header {
             &--role {
              font-weight: 700;
              letter-spacing: 3.1px;
+             background-color: #fef06973;
+             border-left: 2px solid #fef06973;
+             box-sizing: content-box;
             }
         }
     }
