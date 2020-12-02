@@ -22,7 +22,7 @@ body {
 
 header {
   height: 85vh;
-  background: url("../../static/images/header-mr3.svg") top center no-repeat;
+  background: url("../../static/images/header-mr-sf.svg") top center no-repeat;
   background-size: cover; }
   header .navbar {
     background-color: #1b3803;
@@ -59,7 +59,10 @@ header {
         margin: 0;
         font-size: 50px;
         font-weight: bolder;
-        text-shadow: 2px 2px 3px #ffc25b; }
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #ffffff;
+        text-shadow: 5px 5px #1b3803, 5px 10px #feeb5b; }
       header .my-bio-container .my-bio p {
         margin: 0;
         font-weight: 700; }
@@ -73,6 +76,9 @@ header {
 /*
 linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.541))  , 
 */
+.wrap-writing {
+  background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png); }
+
 .top-bg-writing {
   background: url("../../static/images/w.svg") top center no-repeat;
   background-size: cover;
@@ -175,7 +181,8 @@ footer {
         color: #BD5B1A;
         display: block;
         font-size: 30px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin-top: 0px; }
       footer .contact-me .contact-form h4 {
         display: block;
         font-size: 13px; }
