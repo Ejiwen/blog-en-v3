@@ -140,16 +140,53 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
     flex-direction: row; }
 
 footer {
-  background-color: blueviolet;
+  background: url("../../static/images/footer-bg.svg") bottom center no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 50px 0; }
+  flex-wrap: wrap; }
+  footer .follow-me svg {
+    padding: 3px; }
   footer .contact-me {
     flex-basis: 500px; }
     footer .contact-me__form {
       display: flex;
       flex-direction: column;
       margin: 0; }
+    footer .contact-me .contact-form {
+      background: #ffbe51;
+      padding: 25px;
+      margin: 50px 0;
+      border-radius: 30px; }
+      footer .contact-me .contact-form h3 {
+        color: #BD5B1A;
+        display: block;
+        font-size: 30px;
+        font-weight: 400; }
+      footer .contact-me .contact-form h4 {
+        margin: 5px 0 15px;
+        display: block;
+        font-size: 13px; }
+      footer .contact-me .contact-form fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%; }
+      footer .contact-me .contact-form input[type="text"], footer .contact-me .contact-form input[type="email"], footer .contact-me .contact-form textarea {
+        width: 100%;
+        border: 1px solid #CCC;
+        background: #FFF;
+        margin: 0 0 5px;
+        padding: 10px; }
+      footer .contact-me .contact-form button[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        background: #bd5b1a;
+        color: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 15px; }
