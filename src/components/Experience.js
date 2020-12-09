@@ -1,65 +1,70 @@
 import React, { useState } from 'react'
+import experiences from "../../static/images/experiences1.svg"
+import ExperienceTmpl from './parts/ExperienceTmpl';
 
 const Experience = () => {
 
-    const [cmps, setCmps] = useState([
+    const experiencesArray = [
         {
-          company: 'Kinross Gold',
-          experience: "- Provided engineering data and analysis - Organizing data in a way that serves the company benefits better.- Provides access to the data in useful ways.",
-          open: true
+          company: 'KINROSS GOLD',
+          role: "Autodesk Data Analyst",
+          periode: "Nov 2018 - Jan 2020",
+          experience: [
+            "Provided engineering data and analysis.",
+            "Organizing data in a way that serves the company benefits better.",
+            "Provides access to the data in useful ways."
+          ],
+
         },
         {
-          company: 'MNTIC (Mntic.fr)',
-          experience: '- Worked on technical problems for E-deal CRM.',
-          open: false
+          company: 'MNTIC',
+          role: "Software Engineer",
+          periode: "Jan 2017 - Jan 2018",
+          experience: [
+            "Worked on technical problems for E-deal CRM customers (become Efficy CRM later).",
+          "Used: Java/Java EE, JavaScript/Ajax/ JQuery , JSON /Webservices, HTML/CSS",
+          "SQL,XML, Server-side debugging, Browser debugging, experience troubleshooting cross-browser compatibility issues ..."
+        ],
+
         },
         {
           company: 'Hadmool',
-          experience: 'Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.',
-          open: false
+          role: "Full Stack Developer",
+          periode: "Jan 2016 - Jan 2017",
+          experience: ['Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.','Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.','Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.'],
+
         }
-      ]);
+      ];
 
+    const [cmps, setCmps] = useState(experiencesArray[0]);
 
-      const toggleCMP = index => {
-        
-        setCmps(cmps.map((cmp,i) => { 
-
-            if(i===index) {
-                cmp.open = !cmp.open
-            } else {
-                cmp.open = false
-            }
-            console.log("test")
-            return cmp
-
-        }))
-        
-        
-      }
+      const toggleCMP = index => { 
+        setCmps(experiencesArray[index])
+        }
 
     return (
+        <div className="experience-wrap">
         <div className="experience">
-            <div className="experience__menu">
+            <div className="experience__header">
+            
+            <h3> Experiences </h3>
+        </div>
+        <div className="experience__body">
+            <div className="menu">
                 <ul>
                    {
-                       cmps.map((cmp,i) => (
+                       experiencesArray.map((cmp,i) => (
                        <li onClick={() => toggleCMP(i)} key={i}>{cmp.company}</li>
                        ))
                    }
                 </ul>
             </div>
 
-            <div className="experience__content">
-                {
-                    cmps.map((cmp,i) => (
-                        <div className={cmp.open ? "" : "hidePanel"} key={i}>
-                            {cmp.experience}
-                        </div>
-                    ))
-                }
-                 
+            <div className="content">              
+               <ExperienceTmpl {...cmps} /> 
             </div>
+        </div>
+        </div>
         </div>
     )
 }

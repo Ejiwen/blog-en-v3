@@ -127,22 +127,47 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
     color: #BD5B1A;
     font-weight: bolder; }
 
-.experience {
+.experience-wrap .experience {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  border: 1px solid red;
-  padding: 10px; }
-  .experience__menu {
-    padding: 15px;
-    flex-basis: 400px; }
-  .experience__content {
-    padding: 15px; }
-
-.hidePanel {
-  display: none; }
+  border: 1px solid red; }
+  .experience-wrap .experience__body {
+    border: 1px solid red;
+    display: flex;
+    width: 100%; }
+    .experience-wrap .experience__body .menu {
+      padding: 15px;
+      flex-basis: 400px;
+      cursor: pointer; }
+      .experience-wrap .experience__body .menu ul {
+        margin-left: 0; }
+        .experience-wrap .experience__body .menu ul li {
+          list-style: none; }
+    .experience-wrap .experience__body .content {
+      padding: 15px;
+      width: 100%; }
+      .experience-wrap .experience__body .content .tmplExperience__role {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #1b3803; }
+      .experience-wrap .experience__body .content .tmplExperience__company {
+        margin-bottom: 0;
+        background-color: rgba(220, 223, 17, 0.37);
+        width: fit-content;
+        padding: 1px 5px;
+        font-size: medium;
+        color: #1b3803;
+        border-radius: 2px;
+        letter-spacing: 2px; }
+      .experience-wrap .experience__body .content .tmplExperience__periode {
+        font-size: smaller;
+        letter-spacing: 2px; }
+      .experience-wrap .experience__body .content .tmplExperience__list {
+        margin-top: 15px;
+        list-style: none; }
 
 .projects {
   max-width: 1200px;
@@ -151,7 +176,7 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   flex-direction: column;
   align-items: center;
   border: 1px solid red;
-  padding: 10px; }
+  padding: 15px; }
   .projects .project {
     display: flex;
     flex-direction: row; }
