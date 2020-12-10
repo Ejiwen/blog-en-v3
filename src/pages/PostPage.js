@@ -1,27 +1,13 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import Post from '../components/Post'
 import Footer from '../components/Footer'
-import logo from "../../static/images/logoV2-top.svg"
+import Navbar from './Navbar'
 
 function PostPage({data}) {
     const {allMdx:{nodes}} = data;
     return (
         <div>
-            <header>
-            <div className="navbar">
-       <nav>
-       <div className="logo-header"><img src={logo} /></div>
-           <ul>
-               <li><Link to="/">Home</Link></li>
-               <li> <Link to="/PostPage">Blog</Link></li>
-               <li>Work</li>
-               <li>Résumé</li>
-               <li>  Contact </li>
-           </ul>
-       </nav>
-       </div>
-        </header>
+            <Navbar />
         <div className="wrap-writing">
         <div className="top-bg-writing"> </div>
         <div className="writing">

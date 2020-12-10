@@ -6,38 +6,7 @@ header {
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     // clip-path: polygon(100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0 0);
 
-    .navbar{
-        background-color: #1b3803; // #bd5b1ab2
-        height: 50px;
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-        max-width: 1300px;
-        margin: auto;
-        color: #e9e5ba;
-        
-        ul {
-            li {
-                display: inline-block;
-                padding-left: 15px;
-            }
-        }
-
-        .logo-header {
-            img {
-                border-bottom: 10px solid #1b3803;
-                border-left: 2px solid #1b3803;
-                height: 40px;
-                box-sizing: content-box;
-                border-radius: 10px;
-                background-color: #1b3803;
-            }
-        }
-
-    }
-}
+  
 
     .my-bio-container {
         display: flex;
