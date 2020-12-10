@@ -3,7 +3,7 @@
     // background-size: cover;
     // //max-height: 200px;
     // border: 2px solid red;
-    background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png)
+    // background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png)
 }
 
 .top-bg-writing {
@@ -15,12 +15,26 @@
 
 .writing {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    color: black;
+
+    &__header {
+
+    }
+
+    &__body {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     max-width: 1200px;
     margin: auto;
     color: black;
     flex-wrap: wrap;
+    }
 }
 
 .post-content {
