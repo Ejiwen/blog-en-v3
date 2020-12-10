@@ -8,7 +8,7 @@ const Writing = ({allMdx:{nodes}}) => {
     console.log("-----------");
     return(
         <div className="wrap-writing">
-        <div className="top-bg-writing"> </div>
+        {/* <div className="top-bg-writing"> </div> */}
         <div className="writing">
             {/* <img src="images/writing1.svg" />    */}
              {
