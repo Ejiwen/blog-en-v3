@@ -177,10 +177,16 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   align-items: center;
   border: 1px solid red;
   padding: 15px; }
-  .projects-wrap .projects__body .projetTmpl {
-    display: flex; }
-    .projects-wrap .projects__body .projetTmpl__pic {
-      min-width: 50%; }
+  .projects-wrap .projects__body {
+    display: flex;
+    align-items: center; }
+    .projects-wrap .projects__body .iconSlider {
+      cursor: pointer; }
+    .projects-wrap .projects__body .projetTmpl {
+      display: flex;
+      padding: 0 60px; }
+      .projects-wrap .projects__body .projetTmpl__pic {
+        min-width: 50%; }
 
 footer {
   background: url("../../static/images/footer-bg.svg") bottom center no-repeat;

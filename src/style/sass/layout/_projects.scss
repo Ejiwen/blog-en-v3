@@ -9,9 +9,16 @@
     padding: 15px;
 
     &__body {
+        display: flex;
+        align-items: center;
+
+        .iconSlider {
+            cursor: pointer;
+        }
 
     .projetTmpl {
         display: flex;
+        padding: 0 60px;
         // flex-wrap: wrap;
         &__pic {
             min-width: 50%;

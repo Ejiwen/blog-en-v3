@@ -1,8 +1,11 @@
+import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 function ProjectTmpl({name,pic, desc}) {
     return (
         <div className="projetTmpl">
+            
             <div className="projetTmpl__description">
             <h3> {name} </h3>
             <p> {desc} </p>

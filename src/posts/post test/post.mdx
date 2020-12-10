@@ -1,0 +1,62 @@
+---
+title: List all css properties available in your browser
+slug: css-properties
+image: ./images/css-list-properties.jpg
+date: 2020-05-02
+author: john smith
+category: HTML&CSS
+readTime: 5
+---
+
+import { Link } from "gatsby"
+
+Before ES6 came out with template Strings in 2015. The strings in JS have very limited in its syntax but also very limited in its functionality.
+
+To enable you to solve more complex problems and concatenate strings together in a smooth way. Not just String to Strings but String with data values.ES6 template literals provide the syntax that allows you to work with Strings in a safer and cleaner way.
+Gone will be the hours of long suffer with long string concatenation!
+
+### Basic usage
+The syntax of template strings is very simple, just use backticks instead of single or double quotes.
+```javascript
+let msg = `A string`;
+```
+If we want to surround a special world with a single or double quotes we can do that simply .. because we have used a different character to define our string.
+
+### Multiline strings
+Template strings make multiline much simpler. we can simply add a line break where we want to, press enter and there it is.
+```javascript
+let msg = `Hi,
+
+Good job.
+
+Regards`;
+```
+so we can format our string to look like as we wish. 
+
+### Expressions
+Template literals provide an easy way to contain placeholders and expressions into strings.You do so by using the ${...}
+```javascript
+const name = 'Naya';
+const msg = `Hi ${name}`;
+```
+Inside of the curly braces, it's often gonna be a variable, but it could be a whole JavaScript expression or mathematical expression. Can be a function call, it can even be a template literal inside of that expression if you need it to be.
+* **Mathematical expression**
+```javascript
+const msg = `You have ${1+3} Dogs`;
+```
+* **function call**
+```javascript
+const msg = `Hi ${nameFn()}`;
+console.log(msg);
+function nameFn() {
+  return "Naya";
+}
+```
+***
+***
+
+>This is my first blog post and i'm happy to join in.
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
