@@ -6,7 +6,7 @@ import logo from "../../static/images/logoV2-top.svg"
 const Footer = () => {
     return (
         <footer>
-
+            <div className="footer-right-div">     
             <div className="logo-footer"> <img src={logo} /> </div>
             <div className="follow-me"> 
             <FontAwesomeIcon icon={faLinkedin} size="2x" /> 
@@ -15,6 +15,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faTwitterSquare} size="2x" /> 
             <FontAwesomeIcon icon={faYoutubeSquare} size="2x" /> 
             </div>
+            </div>  
 
             <div className="contact-me">  
             <form className="contact-form" action="" method="post">
@@ -35,7 +36,7 @@ const Footer = () => {
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 </fieldset>
             </form>
-</div>
+            </div>
 
         </footer>
     )

@@ -1,16 +1,19 @@
 header {
-    height: 85vh;
+    // height: 85vh;
     //width: 100vw;
-    background: url("../../static/images/header-mr-sf.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
+    background:url("../../static/images/header-mr-sf.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
     background-size: cover;
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     // clip-path: polygon(100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0 0);
-
-  
+    position: relative;
 
     .my-bio-container {
         display: flex;
-        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
         .my-bio {  
             width: 100%;
             display: flex;
