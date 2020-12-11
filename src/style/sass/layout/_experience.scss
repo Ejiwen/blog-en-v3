@@ -7,6 +7,19 @@
     align-items: center;
     // border: 1px solid red;
 
+    &__header {
+        color:#B7463E;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 200px;
+        }
+
+        h3 {
+        font-size: xxx-large;
+        }
+    }
 
     &__body{
         // border: 1px solid red;

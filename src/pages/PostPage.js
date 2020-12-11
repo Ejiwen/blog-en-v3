@@ -21,12 +21,17 @@ function PostPage({data}) {
         <div className="wrap-writing">
         <div className="top-bg-writing"> </div>
         <div className="writing">
+        <div className="writing__header">
+            <h3> List Posts </h3>
+            </div>
+            <div className="writing__body">
             {/* <img src="images/writing1.svg" />    */}
             
              {
              nodes.map(post => <Post key={post.id} {...post} />)
              }
             
+        </div>
         </div>
         </div>
         <Footer />

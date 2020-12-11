@@ -5,6 +5,7 @@ import ProjectTmpl from './parts/ProjectTmpl'
 import {MNTIC, IRBEH} from './parts/ProjetDisc'
 import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import headerWorks from "../../static/images/workBg.svg"
 
 const Projects = () => {
 
@@ -31,7 +32,7 @@ const Projects = () => {
         <div className="projects-wrap">
             <div className="projects">
             <div className="projects__header">
-            <h3> Recent Projects </h3>
+            <img src={headerWorks} /><h3> Recent Projects </h3>
             </div>
             
             <div className="projects__body">

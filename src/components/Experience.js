@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import experiences from "../../static/images/experiences1.svg"
 import ExperienceTmpl from './parts/ExperienceTmpl';
+import headerExperiences from "../../static/images/experiencesBg.svg"
 
 const Experience = () => {
 
@@ -47,7 +47,7 @@ const Experience = () => {
         <div className="experience">
             <div className="experience__header">
             
-            <h3> Experiences </h3>
+            <img src={headerExperiences} /> <h3> Experiences </h3>
         </div>
         <div className="experience__body">
             <div className="menu">

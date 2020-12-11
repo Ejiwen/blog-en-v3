@@ -1,8 +1,5 @@
 .wrap-writing {
-    // background: url("../../static/images/w.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
-    // background-size: cover;
-    // //max-height: 200px;
-    // border: 2px solid red;
+    //background-size: cover;
     // background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png)
 }
 
@@ -23,7 +20,17 @@
     color: black;
 
     &__header {
+        color:#B7463E;
+        display: flex;
+        align-items: center;
 
+        img {
+            width: 200px;
+        }
+
+        h3 {
+            font-size: xxx-large;
+            }
     }
 
     &__body {

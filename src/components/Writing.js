@@ -1,5 +1,6 @@
 import React from 'react'
 import Post from './Post'
+import headerWriting from "../../static/images/writingBg.svg"
 
 const Writing = ({allMdx:{nodes}}) => {
   
@@ -8,10 +9,10 @@ const Writing = ({allMdx:{nodes}}) => {
     console.log("-----------");
     return(
         <div className="wrap-writing">
-        {/* <div className="top-bg-writing"> </div> */}
+        
         <div className="writing">
         <div className="writing__header">
-            <h3> Recent Posts </h3>
+            <img src={headerWriting} /><h3> Recent Posts </h3>
             </div>
             <div className="writing__body">
             {/* <img src="images/writing1.svg" />    */}
