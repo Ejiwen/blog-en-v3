@@ -32,7 +32,7 @@ const Projects = () => {
         <div className="projects-wrap">
             <div className="projects">
             <div className="projects__header">
-            <img src={headerWorks} /><h3> Recent Projects </h3>
+            <img src={headerWorks} /><h3> Recent Works </h3>
             </div>
             
             <div className="projects__body">

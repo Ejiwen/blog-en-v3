@@ -1,4 +1,5 @@
 .wrap-writing {
+    margin-top: 50px;
     //background-size: cover;
     // background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png)
 }
@@ -23,13 +24,15 @@
         color:#B7463E;
         display: flex;
         align-items: center;
+        padding-top: 20px;
 
         img {
             width: 200px;
         }
 
         h3 {
-            font-size: xxx-large;
+            font-size: xx-large;
+            width: 212px;
             }
     }
 
@@ -41,6 +44,7 @@
     margin: auto;
     color: black;
     flex-wrap: wrap;
+    
     }
 }
 
@@ -50,6 +54,10 @@
     // background-color: #E2E2E2;
     margin: 20px;
     flex-basis: 300px;
+    border-left: 5px solid #ffa207;
+    border-radius: 10px;
+    box-shadow: #c7676083 5px 5px, rgba(0, 128, 0, 0.479) 10px 10px, rgba(255, 217, 0, 0.247) 15px 15px;
+    //box-shadow: rgb(193 97 90) 5px 5px, rgba(5, 150, 17, 0.541) 10px 10px, rgb(255 162 7 / 68%) 15px 15px, rgba(220, 223, 17, 0.37) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px
 }
 
 .post-pic {
@@ -74,11 +82,11 @@
 .post-body {
     border: 1px solid rgb(0, 9, 128);
     margin:10px;
-    background-color: #E2E2E2;
+    background-color: #fff;
 }
 
 .post-info{
-    background-color: #E2E2E2;
+    background-color: #fff;
     padding: 0 8px 0 8px;
 
     &-title {

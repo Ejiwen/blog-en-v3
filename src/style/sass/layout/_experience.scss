@@ -1,6 +1,12 @@
 .experience-wrap {
+    margin-top: 50px;
+    background-color: #ffc665;
+
+    .topExpBg {
+        transform: rotate(180deg);
+    }
 .experience {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -11,13 +17,16 @@
         color:#B7463E;
         display: flex;
         align-items: center;
+        padding-top: 20px;
+        
 
         img {
             width: 200px;
         }
 
         h3 {
-        font-size: xxx-large;
+        font-size: xx-large;
+        width: 212px;
         }
     }
 
@@ -25,6 +34,7 @@
         // border: 1px solid red;
         display: flex;
         width: 100%;
+        
     .menu {
         padding: 15px;
         flex-basis: 400px;

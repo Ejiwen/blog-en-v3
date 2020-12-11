@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import ExperienceTmpl from './parts/ExperienceTmpl';
+import styled from '@emotion/styled'
 import headerExperiences from "../../static/images/experiencesBg.svg"
+
+const ExperienceBttomBg = styled.div`
+background:url('https://assets-global.website-files.com/5eb2825fc062423a537b975c/5eb2825fc06242394c7b9980_mask.svg') no-repeat;
+background-size: cover;
+height: 36px;
+`
 
 const Experience = () => {
 
@@ -44,6 +51,7 @@ const Experience = () => {
 
     return (
         <div className="experience-wrap">
+          <ExperienceBttomBg className="topExpBg"></ExperienceBttomBg>
         <div className="experience">
             <div className="experience__header">
             
@@ -65,6 +73,7 @@ const Experience = () => {
             </div>
         </div>
         </div>
+        <ExperienceBttomBg></ExperienceBttomBg>
         </div>
     )
 }
