@@ -43,6 +43,13 @@
             margin-left: 0;
             li {
                 list-style: none;
+                color: #1b3803;
+                padding: 2px 4px;
+                font-weight: 600;
+                &:hover {
+                    background-color: rgba(220, 223, 17, 0.37);
+                    border-left: 2px solid darkgreen;
+                }
             }
         }
     }
@@ -73,6 +80,7 @@
             &__list {
                 margin-top: 15px;
                 list-style: none;
+                color: #191818;
             }
         }
         
