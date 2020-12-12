@@ -17,9 +17,10 @@ function PostPage({data}) {
     const {allMdx:{nodes}} = data;
     return (
         <div>
-            <Navbar />
-        <div className="wrap-writing">
-        <div className="top-bg-writing"> </div>
+            <Navbar /> 
+            
+        <div className="wrap-writing" style={{marginTop: "0"}} >
+       <div className="top-bg-writing"> </div>
         <div className="writing">
         <div className="writing__header">
             <h3> List Posts </h3>
