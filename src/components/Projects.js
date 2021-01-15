@@ -29,7 +29,7 @@ const Projects = () => {
     }
     
     return (
-        <div className="projects-wrap">
+        <div id="worky" className="projects-wrap">
             <div className="projects">
             <div className="projects__header">
             <img src={headerWorks} /><h3> Recent Works </h3>
