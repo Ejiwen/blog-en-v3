@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import mnticImg from "../../static/images/mnticProject.svg"
 import irbehImg from "../../static/images/irbehProject.svg"
 import ProjectTmpl from './parts/ProjectTmpl'
@@ -13,12 +13,16 @@ const Projects = () => {
         {
             name: "MNTIC",
             desc: MNTIC,
-            pic: mnticImg
+            linkProject: "http://mntic.fr/",
+            pic: mnticImg,
+            classN: "mnticCls"
         },
         {
             name: "IRBEH",
             desc: IRBEH,
-            pic: irbehImg
+            linkProject: "https://irbeh.com/",
+            pic: irbehImg,
+            classN: "irbehCls"
         }
     ]
 
@@ -27,6 +31,7 @@ const Projects = () => {
     const nextProj = () => {
         projDisplay.name == "MNTIC" ? setProj(projectList[1]) : setProj(projectList[0]);
     }
+
     
     return (
         <div id="worky" className="projects-wrap">

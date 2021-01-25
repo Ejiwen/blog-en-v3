@@ -1,5 +1,6 @@
 .projects-wrap {
     margin-top: 50px;
+
 .projects {
     max-width: 1200px;
     margin: auto;
@@ -38,14 +39,45 @@
             box-sizing: content-box;
         }
 
+        .mnticCls {
+            opacity: 1;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+            
+        }
+        
+        .irbehCls {
+            opacity: 1;
+            animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+            
+        }
+
     .projetTmpl {
         display: flex;
         padding: 0 60px;
         background: #ECF0F1;
         color: #191818;
+        border: 1px gold solid;
+
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap;
+          }
+
+        a {
+        color: inherit;
+        text-decoration: none;
+        background-image: none;
+        }
+
         &__pic {
             min-width: 50%;
             padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         &__description {
@@ -58,3 +90,45 @@
 
 }
 }
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+    }
+
+  
+
+    40% {
+        opacity: 0.4;
+    }
+
+   
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.4;
+    }
+
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
