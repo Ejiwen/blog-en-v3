@@ -6,14 +6,14 @@ const Navbar = () => {
     return (
         
            <nav className="navigation">
-               <img src={logo} width="100px" /> 
+               
                <input type="checkbox" className="navigation__checkbox" id="checkLabel" />
                <label className="navigation__label" for="checkLabel">
                    <span className="navigation__icon">&nbsp;</span>
                 </label>
-
+                <img src={logo} />
                <div className="navigation__bg"></div>
-
+               
             
             <div className="navigation__menu">
                 {/* <img src={logo} /> */}
