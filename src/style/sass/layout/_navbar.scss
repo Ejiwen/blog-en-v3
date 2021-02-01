@@ -1,5 +1,15 @@
 .navigation {
 
+    & img {
+        margin-top: 1rem;
+        background-color: #b7463e;
+        margin-left: 1rem;
+        /* border: 1px solid #ffd58e; */
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+    }
+
     &__checkbox {
         display: none;
     }
@@ -22,7 +32,7 @@
         // right: 0;
     }
 
-    &__label {
+    &__checkbox:not(:checked) ~ &__label {
         position: fixed;
         top: 1rem;
         right: 1rem;
@@ -32,19 +42,27 @@
         background-color: #b7463e;
         z-index: 2000;
 
-        // background-color: white;
-        // height: 3rem;
-        // width: 3rem;
-        // position: fixed;
-        // top: 6rem;
-        // right: 6rem;
-        // border-radius: 50%;
-        // z-index: 2000;
-
         box-shadow: 0 1rem 3rem rgba(black, .1);
         text-align: center;
         cursor: pointer;
 
+        transition: all .8s;
+    }
+
+    &__checkbox:checked ~ &__label {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        // background-color:#fb7d00;
+        background-image:  radial-gradient(closest-side, #b7463e, #f69d3c, #fb7d00);
+        z-index: 2000;
+
+        box-shadow: 0 1rem 3rem rgba(black, .1);
+        text-align: center;
+        cursor: pointer;
     }
 
     &__icon {
@@ -74,14 +92,12 @@
         &::after { top: -.6em; left: .3rem;}
     }
 
-
-    &__checkbox:not(:checked) ~ &__label:hover &__icon::before, &__label:hover &__icon::after {
+    &__checkbox:not(:checked) + &__label:hover &__icon::before,
+    &__checkbox:not(:checked) + &__label:hover &__icon::after {
         left: 0rem;
     }
 
-    
-
-    &__label:hover &__icon {
+    &__checkbox:not(:checked) + &__label:hover &__icon {
         left: 0rem;
     }
 

@@ -1,0 +1,146 @@
+---
+title: create a pretty slider with just html and css
+slug: css-html-slide
+image: ./images/css-list-properties.jpg
+date: 2021-01-02
+author: Cheikhany Ejiwen
+category: HTML&CSS
+readTime: 7
+---
+
+import { Link } from "gatsby"
+
+have a slider in your website or blog can be a useful part of the user experience.
+And besides, it gets your website looks prettier and more organized.
+
+In this post, i'm go to show you how can you create one using just html and css. 
+Some line of code will be explained other are simple . 
+In any case ... i will try go with over every step and make the steps as simple and clear as possible.
+
+### html part 
+The syntax of template strings is very simple, just use backticks instead of single or double quotes.
+```html
+<div class="slider-wrap">
+  <div class="slider-links">
+    <a href="#slide-1">1</a>
+    <a href="#slide-2">2</a>
+    <a href="#slide-3">3</a>
+    <a href="#slide-4">4</a>
+    <a href="#slide-5">5</a>
+  </div>
+
+  <div class="slider">
+    <div class="slide" id="slide-1">1</div>
+    <div class="slide" id="slide-2">2</div>
+    <div class="slide" id="slide-3">3</div>
+    <div class="slide" id="slide-4">4</div>
+    <div class="slide" id="slide-5">5</div>
+  </div>
+</div>
+```
+
+### CSS part
+Template strings make multiline much simpler. we can simply add a line break where we want to, press enter and there it is.
+```css
+* {
+  /*  padding and border are included in the width and height */
+  box-sizing: border-box;
+}
+```
+Html code can be divide to three sections (slider links, slider content and navigation bar) . 
+
+we will start styling the links section that lets us move between the different slide.
+
+### Slide links
+
+```css
+.slider-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.slider-links a {
+  background-color: darkgreen;
+  color: aliceblue;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+```
+
+### Slide content
+```css
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  /*  how strictly snap points are enforced 
+        Isn't supported on Chrome
+    */
+  scroll-snap-type: x mandatory;
+  /* Smoothly animate instead of a straight jump */
+  scroll-behavior: smooth;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+  font-size: xxx-large;
+  font-weight: bolder;
+  color: red;
+  border: 1px solid green;
+  border-radius: 5px;
+  background: bisque;
+  display: flex;
+  justify-content: center; /* X axis */
+  align-items: center; /* Y axis */
+  margin-right: 20px;
+}
+```
+Assign auto value to overflow-x property cause a scrolling mechanism to be provided for overflowing boxes .
+scroll-snap-type property set how strictly snap points are enforced, scroll-snap-type isn't supported on google chrome.
+visit this page for more information https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type.
+Instead of a straight jump, scroll-behavior: smooth add a smooth scrolling effect to the slider.
+
+
+### Navigation bar
+```css
+/* the scrollbar style */
+.slider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: rgb(12, 190, 51);
+  border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+  background: rgb(4, 80, 20);
+}
+
+.slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+```
+The ::-webkit-scrollbar pseudo element allows us to modify the look of the browser's scrollbar.
+
+visit this page for more information: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+
+***
+***
+
+>This is my first blog post and i'm happy to join in.
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>

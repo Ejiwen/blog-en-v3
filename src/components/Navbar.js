@@ -6,6 +6,7 @@ const Navbar = () => {
     return (
         
            <nav className="navigation">
+               <img src={logo} width="100px" /> 
                <input type="checkbox" className="navigation__checkbox" id="checkLabel" />
                <label className="navigation__label" for="checkLabel">
                    <span className="navigation__icon">&nbsp;</span>
