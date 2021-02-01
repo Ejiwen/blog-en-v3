@@ -59,27 +59,87 @@ header {
 /*
 linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.541))  , 
 */
-.navbar {
-  background-color: #1b3803;
-  height: 50px; }
-  .navbar nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    max-width: 1300px;
-    margin: auto;
-    color: #e9e5ba; }
-    .navbar nav ul li {
-      display: inline-block;
-      padding-left: 15px; }
-    .navbar nav .logo-header img {
-      border-bottom: 10px solid #1b3803;
-      border-left: 2px solid #1b3803;
-      height: 40px;
-      box-sizing: content-box;
-      border-radius: 10px;
-      background-color: #1b3803; }
+.navigation__checkbox {
+  display: none; }
+
+.navigation__checkbox:checked ~ .navigation__bg {
+  width: 500px;
+  padding-right: 1.5rem; }
+
+.navigation__checkbox:checked ~ .navigation__menu {
+  width: 500px;
+  height: 2rem;
+  opacity: 1; }
+
+.navigation__label {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #b7463e;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 1.4rem;
+  text-align: center;
+  left: -.2rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 1.8rem;
+    height: 2px;
+    background-color: white;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: .6rem;
+    left: .3rem; }
+  .navigation__icon::after {
+    top: -.6em;
+    left: .3rem; }
+
+.navigation__label:hover .navigation__icon::before, .navigation__label:hover .navigation__icon::after {
+  left: 0rem; }
+
+.navigation__label:hover .navigation__icon {
+  left: 0rem; }
+
+.navigation__bg {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #fb7d00db;
+  z-index: 1000;
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navigation__menu {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  display: inline-flex;
+  list-style: none;
+  list-style: none;
+  text-align: left;
+  width: 100%; }
+
+.navigation__item {
+  margin-right: .6rem; }
 
 .wrap-writing {
   margin-top: 50px; }

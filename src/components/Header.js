@@ -12,10 +12,8 @@ height: 36px;
 
 const Header = () => {
    return (
-    <header><Navbar />
-       
-       
-
+    <header>
+       <Navbar />
        <div className="my-bio-container">
        <div className="my-bio">
            <div>
