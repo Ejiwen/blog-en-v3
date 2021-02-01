@@ -69,7 +69,10 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
 .navigation__checkbox:checked ~ .navigation__menu {
   width: 500px;
   height: 2rem;
-  opacity: 1; }
+  opacity: 1;
+  border: 3px solid #b7463e;
+  border-radius: 5px;
+  color: white; }
 
 .navigation__label {
   position: fixed;
@@ -105,11 +108,22 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
     top: -.6em;
     left: .3rem; }
 
-.navigation__label:hover .navigation__icon::before, .navigation__label:hover .navigation__icon::after {
+.navigation__checkbox:not(:checked) ~ .navigation__label:hover .navigation__icon::before, .navigation__label:hover .navigation__icon::after {
   left: 0rem; }
 
 .navigation__label:hover .navigation__icon {
   left: 0rem; }
+
+.navigation__checkbox:checked + .navigation__label .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__label .navigation__icon::after {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__label .navigation__icon::before {
+  top: 0;
+  transform: rotate(-135deg); }
 
 .navigation__bg {
   position: fixed;
@@ -120,7 +134,7 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   border-radius: 5px;
   background-color: #fb7d00db;
   z-index: 1000;
-  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__menu {
   position: fixed;
@@ -136,10 +150,20 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   list-style: none;
   list-style: none;
   text-align: left;
-  width: 100%; }
+  width: max-content;
+  position: absolute;
+  right: 2.5rem;
+  align-items: center;
+  margin-top: 2px;
+  transition: all .2s; }
 
 .navigation__item {
   margin-right: .6rem; }
+  .navigation__item a {
+    background: none; }
+
+.navigation__link:link, .navigation__link:visited {
+  text-decoration: none; }
 
 .wrap-writing {
   margin-top: 50px; }
