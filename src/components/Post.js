@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 const Post = ({ excerpt, frontmatter }) => {
   const { category, readTime, image, title, slug } = frontmatter
+  const linky = "/"+ slug;
   return (
 
       // <div className="post-body">
@@ -31,7 +32,7 @@ const Post = ({ excerpt, frontmatter }) => {
             <div><p className="post-info-intro">{excerpt}</p></div>
             <div className="post-info-tags">
             <span>{category}</span> <span>{readTime}</span>
-            <Link to={slug}>
+            <Link to={linky}>
             read more
           </Link>
             </div>

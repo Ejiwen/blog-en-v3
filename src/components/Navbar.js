@@ -11,7 +11,7 @@ const Navbar = () => {
                <label className="navigation__label" for="checkLabel">
                    <span className="navigation__icon">&nbsp;</span>
                 </label>
-                <img src={logo} />
+                <Link to='/'> <img src={logo} /> </Link>
                <div className="navigation__bg"></div>
                
             
