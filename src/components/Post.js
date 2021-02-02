@@ -1,6 +1,14 @@
 import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
+import styled from 'styled-components';
+
+const Spaned = styled.span`
+  margin: 5px 0;
+  padding: 5px; 
+  border: 1px solid grey;
+  border-radius: 5px;
+`;
 
 const Post = ({ excerpt, frontmatter }) => {
   const { category, readTime, image, title, slug } = frontmatter
@@ -29,12 +37,16 @@ const Post = ({ excerpt, frontmatter }) => {
 
           <div className="post-info">
             <div className="post-info-title">{title} </div>
-            <div><p className="post-info-intro">{excerpt}</p></div>
-            <div className="post-info-tags">
-            <span>{category}</span> <span>{readTime}</span>
+            <div><p className="post-info-intro">{excerpt}</p>
             <Link to={linky}>
             read more
-          </Link>
+            </Link>
+            </div>
+            
+            <div className="post-info-tags">
+            <Spaned>{category}</Spaned>
+            <Spaned>{readTime}</Spaned>
+            
             </div>
           </div>
         </div>

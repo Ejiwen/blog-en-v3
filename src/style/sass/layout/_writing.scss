@@ -93,4 +93,9 @@
         color: #BD5B1A;
         font-weight: bolder;
     }
+
+    &-tags {
+        display: flex;
+        justify-content: space-between;
+    }
 }
