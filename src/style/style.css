@@ -20,6 +20,9 @@ body {
 .svg8 {
   border: 10px solid green; }
 
+a {
+  background-image: none !important; }
+
 header {
   background: url("../../static/images/header-mr-sf.svg") top center no-repeat;
   background-size: cover;

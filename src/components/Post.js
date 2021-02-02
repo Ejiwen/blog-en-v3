@@ -2,13 +2,21 @@ import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleRight, faArrowRight, faClock, faHourglassStart, faLongArrowAltRight, faTag, faUserClock } from "@fortawesome/free-solid-svg-icons";
 
 const Spaned = styled.span`
   margin: 5px 0;
   padding: 5px; 
-  border: 1px solid grey;
-  border-radius: 5px;
+  // border: 1px solid grey;
+  // border-radius: 5px;
 `;
+
+const ReadMore = styled.span`
+  display: block;
+  text-align: right;
+`;
+
 
 const Post = ({ excerpt, frontmatter }) => {
   const { category, readTime, image, title, slug } = frontmatter
@@ -36,16 +44,21 @@ const Post = ({ excerpt, frontmatter }) => {
           </div>
 
           <div className="post-info">
-            <div className="post-info-title">{title} </div>
-            <div><p className="post-info-intro">{excerpt}</p>
-            <Link to={linky}>
-            read more
-            </Link>
+            <div className="post-info-title"> <Link to={linky}>{title}</Link> </div>
+            <div><p className="post-info-intro">{excerpt}
+            <ReadMore>
+              <Link to={linky}>
+                read more&nbsp;
+                <FontAwesomeIcon icon={faAngleDoubleRight} size="1x" /> 
+                </Link>
+              </ReadMore>
+            </p>
+           
             </div>
             
             <div className="post-info-tags">
             <Spaned>{category}</Spaned>
-            <Spaned>{readTime}</Spaned>
+            <Spaned><FontAwesomeIcon icon={faHourglassStart} size="1x" /> &nbsp;{readTime}&nbsp;min</Spaned>
             
             </div>
           </div>
