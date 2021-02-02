@@ -1,8 +1,9 @@
 import React from "react"
 import Image from "gatsby-image"
+import { Link } from "gatsby"
 
 const Post = ({ excerpt, frontmatter }) => {
-  const { category, readTime, image, title } = frontmatter
+  const { category, readTime, image, title, slug } = frontmatter
   return (
 
       // <div className="post-body">
@@ -30,6 +31,9 @@ const Post = ({ excerpt, frontmatter }) => {
             <div><p className="post-info-intro">{excerpt}</p></div>
             <div className="post-info-tags">
             <span>{category}</span> <span>{readTime}</span>
+            <Link to={slug}>
+            read more
+          </Link>
             </div>
           </div>
         </div>

@@ -97,7 +97,7 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: #b7463e;
+  background-image: radial-gradient(closest-side, #fb7d00, #f69d3c, #b7463e);
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;

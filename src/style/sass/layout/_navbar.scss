@@ -48,7 +48,9 @@
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
-        background-color: #b7463e;
+        //background-color: #b7463e;
+        // background-image:  radial-gradient(closest-side, #b7463e, #f69d3c, #fb7d00);
+        background-image:  radial-gradient(closest-side,#fb7d00, #f69d3c,#b7463e);
         z-index: 2000;
 
         box-shadow: 0 1rem 3rem rgba(black, .1);
