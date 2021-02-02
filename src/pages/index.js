@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 import "../style/style.css";
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
+
 
 export default function Home({data}) {
-  return <Layout {...data}></Layout>
+  return (<Layout {...data}></Layout>)
 }
 
 

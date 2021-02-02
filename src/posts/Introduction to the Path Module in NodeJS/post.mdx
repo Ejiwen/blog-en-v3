@@ -12,29 +12,33 @@ import { Link } from "gatsby"
 
 Path module is one of the most useful built-in modules in NodeJS. Be able to use this module efficiently increases the clarity and organization of our code on one hand, and shorten the time spending on maintaining it on the other hand. In this article, We're going to look at four helper functions to make path manipulation in our projects easier.
 
-###path.dirname
+### path.dirname
 The path.dirname() method returns the directory name of a path. It's helpful to know the directory that a file is in.
+
 ```javascript
 let ourPath = path.dirname('c:/data/code/test.js');
 console.log(ourPath) // return 'c:/data/code'
 ```
 
-###path.join
+### path.join
 The join method takes two ore more path segments and joins them into one string that can be used anywhere as file path. let's suppose that we need the file path of a jpg image (myDog.jpg) for simplicity's sake.
+
 ```javascript
 let filepath = path.join(__dirname, '/images/pics/',myDog,'jpg);
 console.log(filePath); //returns 'C:/...../iamges/pics/myDog.jpg'
 ```
 
-###path.basename
+### path.basename
 the basename() method returns the name of the file or directory that the file path points to.
+
 ```javascript
 let ourBaseName =path.basename('D:/codeNia/mySite/index.html');
 console.log(ourBaseName); //returns 'index.html'
 ```
 
-###path.extname
+### path.extname
 extname method allow us to know the extension of the given path.
+
 ```javascript
 let myHtml = path.extname('index.html);
 console.log(myhtml) // returns .html
