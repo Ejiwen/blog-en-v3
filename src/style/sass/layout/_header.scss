@@ -31,7 +31,7 @@ header {
                 -webkit-text-fill-color: #1b3803;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: #ffffff;
-                text-shadow: 2px 4px #1b3803, -2px 6px #feeb5b;
+                text-shadow: 2px 4px #1b3803, -2px 6px #b7463e;
             }
             p {
                 margin: 0;
@@ -40,7 +40,7 @@ header {
 
             &--role {
              font-weight: 700;
-             letter-spacing: 0.2rem;
+             letter-spacing: 0.3rem;
              word-spacing: .5rem;
              background-color: #fef06973;
              border-left: 2px solid #fef06973;
@@ -50,6 +50,9 @@ header {
             @media (max-width: 1000px) {
                 h3 {
                     font-size: 45px;
+                }
+                &--role { 
+                    letter-spacing: 0.2rem;
                 }
             }
 
@@ -70,8 +73,6 @@ header {
                 }
                 p {
                     font-size: .6rem;
-                    letter-spacing: 0.2rem;
-                     word-spacing: .2rem;
                 }
             }
 

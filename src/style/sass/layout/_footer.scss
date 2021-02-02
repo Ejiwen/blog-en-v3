@@ -23,6 +23,12 @@ footer {
     }
 }
 
+    @media (max-width: 831px) {
+        .footer-right-div {
+            order: 2;
+        }
+    }
+
     .contact-me {
         flex-basis: 500px;
         &__form {
