@@ -19,7 +19,7 @@ const Header = () => {
            <div>
            <p> Hi, My name is </p>
            <h3>CHEIKHANY EJIWEN</h3>
-           <p className="my-bio--role">Freelance Web Developer in san francisco</p>
+           <p className="my-bio--role">Software Engineer in san francisco</p>
            </div>
        </div>
        </div>

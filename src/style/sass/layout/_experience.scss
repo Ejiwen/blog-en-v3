@@ -28,6 +28,16 @@
         font-size: xx-large;
         width: 212px;
         }
+
+        @media (max-width: 500px) {
+            h3 {
+                font-size: x-large;
+            }
+            img {
+                width: 100px;
+            }
+        }
+
     }
 
     &__body{
