@@ -1,14 +1,19 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, {useEffect} from 'react'
 import logo from "../../static/images/logoV2-top.svg"
 
 const Navbar = () => {
+    useEffect(() => {
+        console.log('render!');
+        const checky = document.querySelector("#checkLabel");
+        checky.checked = true;
+      })
     return (
         
            <nav className="navigation">
                
                <input type="checkbox" className="navigation__checkbox" id="checkLabel" />
-               <label className="navigation__label" for="checkLabel">
+               <label className="navigation__label" for="checkLabel" >
                    <span className="navigation__icon">&nbsp;</span>
                 </label>
                 <Link to='/'> <img src={logo} /> </Link>
