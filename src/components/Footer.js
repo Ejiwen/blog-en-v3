@@ -27,6 +27,9 @@ const Footer = () => {
 
             <div className="contact-me">  
             <form className="contact-form" action="" method="post">
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
                 <h3>Quick Contact</h3>
                 
                 <fieldset>
@@ -43,6 +46,7 @@ const Footer = () => {
                 <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 </fieldset>
+                </form>
             </form>
             </div>
 

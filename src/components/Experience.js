@@ -40,7 +40,7 @@ const Experience = () => {
 
         },
         {
-          company: 'Hadmool',
+          company: 'HADMOOL',
           role: "Full Stack Developer",
           periode: "Jan 2016 - Jan 2017",
           experience: [
