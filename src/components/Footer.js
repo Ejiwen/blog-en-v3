@@ -24,15 +24,7 @@ const Footer = () => {
             {/* <FontAwesomeIcon icon={faTwitterSquare} size="2x" />  */}
             </div>
             </div>  
-
-            <div className="contact-me"> 
-            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-            </form> 
-
-            <form className="contact-form" action="" method="post" name="contact">
+            <form  name="contact" className="contact-form" action="" method="post">
             <input type="hidden" name="form-name" value="contact" />
                 <h3>Quick Contact</h3>
                 
