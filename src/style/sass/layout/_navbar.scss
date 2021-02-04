@@ -98,20 +98,20 @@
 
     &__checkbox:checked + &__label &__icon {
         background-color: transparent;   
-        left: -9px;
+        left: -4px;
     }
 
     &__checkbox:checked + &__label &__icon::after {
         top: 0;
-        width: 1.5rem;
-        height: 3px;
+        width: 1rem;
+        height: 2px;
         transform: rotate(135deg);
     }
 
     &__checkbox:checked + &__label &__icon::before{
         top: 0;
-        width: 1.5rem;
-        height: 3px;
+        width: 1rem;
+        height: 2px;
         transform: rotate(-135deg);        
     }
     
@@ -153,6 +153,7 @@
         align-items: center;
         margin-left: 5rem;
         flex-wrap: wrap;
+        border-radius: 5px;
         transition: all .2s;
     }
 
@@ -219,6 +220,27 @@
             &::before { top: .4rem;left: .3rem;}
             &::after { top: -.4rem; left: .3rem;}
         }
+
+        // START Label Checked Icon 
+        &__checkbox:checked + &__label &__icon {
+            background-color: transparent;   
+            left: -4px;
+        }
+    
+        &__checkbox:checked + &__label &__icon::after {
+            top: 0;
+            width: 1rem;
+            height: 2px;
+            transform: rotate(135deg);
+        }
+    
+        &__checkbox:checked + &__label &__icon::before{
+            top: 0;
+            width: 1rem;
+            height: 2px;
+            transform: rotate(-135deg);        
+        }
+        // END Label Checked Icon 
         
     }
 
@@ -270,6 +292,28 @@
             &::before { top: .4rem;left: .3rem;}
             &::after { top: -.4rem; left: .3rem;}
         }
+
+        // START Label Checked Icon 
+        &__checkbox:checked + &__label &__icon {
+            background-color: transparent;   
+            left: -4px;
+        }
+    
+        &__checkbox:checked + &__label &__icon::after {
+            top: 0;
+            width: 1rem;
+            height: 2px;
+            transform: rotate(135deg);
+        }
+    
+        &__checkbox:checked + &__label &__icon::before{
+            top: 0;
+            width: 1rem;
+            height: 2px;
+            transform: rotate(-135deg);        
+        }
+        // END Label Checked Icon 
+        
         
 
     }

@@ -169,18 +169,18 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
 
 .navigation__checkbox:checked + .navigation__label .navigation__icon {
   background-color: transparent;
-  left: -9px; }
+  left: -4px; }
 
 .navigation__checkbox:checked + .navigation__label .navigation__icon::after {
   top: 0;
-  width: 1.5rem;
-  height: 3px;
+  width: 1rem;
+  height: 2px;
   transform: rotate(135deg); }
 
 .navigation__checkbox:checked + .navigation__label .navigation__icon::before {
   top: 0;
-  width: 1.5rem;
-  height: 3px;
+  width: 1rem;
+  height: 2px;
   transform: rotate(-135deg); }
 
 .navigation__bg {
@@ -214,6 +214,7 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   align-items: center;
   margin-left: 5rem;
   flex-wrap: wrap;
+  border-radius: 5px;
   transition: all .2s; }
 
 .navigation__item {
@@ -257,7 +258,20 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
       left: .3rem; }
     .navigation__icon::after {
       top: -.4rem;
-      left: .3rem; } }
+      left: .3rem; }
+  .navigation__checkbox:checked + .navigation__label .navigation__icon {
+    background-color: transparent;
+    left: -4px; }
+  .navigation__checkbox:checked + .navigation__label .navigation__icon::after {
+    top: 0;
+    width: 1rem;
+    height: 2px;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__label .navigation__icon::before {
+    top: 0;
+    width: 1rem;
+    height: 2px;
+    transform: rotate(-135deg); } }
 
 @media (max-width: 550px) {
   .navigation img {
@@ -291,7 +305,20 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
       left: .3rem; }
     .navigation__icon::after {
       top: -.4rem;
-      left: .3rem; } }
+      left: .3rem; }
+  .navigation__checkbox:checked + .navigation__label .navigation__icon {
+    background-color: transparent;
+    left: -4px; }
+  .navigation__checkbox:checked + .navigation__label .navigation__icon::after {
+    top: 0;
+    width: 1rem;
+    height: 2px;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__label .navigation__icon::before {
+    top: 0;
+    width: 1rem;
+    height: 2px;
+    transform: rotate(-135deg); } }
 
 .wrap-writing {
   margin-top: 50px; }
