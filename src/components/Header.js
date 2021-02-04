@@ -23,7 +23,7 @@ const Header = () => {
            </div>
        </div>
        </div>
-       <img src={bgHeader} style={{visibility: "hidden", height:"500px"}} />
+       <img src={bgHeader} style={{visibility: "hidden", height:"600px"}} />
        <HeaderBttomBg></HeaderBttomBg>
     </header>
 

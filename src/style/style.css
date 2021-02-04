@@ -228,6 +228,9 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
 .navigation__link:link, .navigation__link:visited {
   text-decoration: none; }
 
+.navigation__link:hover {
+  color: #feeb5b; }
+
 @media (max-width: 1000px) {
   .navigation img {
     width: 2.5rem;
