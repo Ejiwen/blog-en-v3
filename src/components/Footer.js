@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="contact-me"> 
             
 
-            <form className="contact-form" action="" method="post" name="contact" >
+            <form className="contact-form" action="" method="post" name="contact" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
                 <h3>Quick Contact</h3>
                 
