@@ -19,7 +19,9 @@ const Experience = () => {
           experience: [
             "Using AutoDesk vault to Provide engineering data and analysis.",
             "Experience in data analysis with the ability to understand and interpret data.",
-            "Development of our internal big data solutions as well as the related data visualization suite."
+            "Development of our internal big data solutions as well as the related data visualization suite.",
+            "Experience in using databases, the SQL language, and the principles of data normalization.",
+            "Collaborate with wider groups on standards and best practices for Big Data / Monitoring Software related areas"
           ],
 
         },
@@ -52,7 +54,7 @@ const Experience = () => {
         }
       ];
 
-    const [cmps, setCmps] = useState(experiencesArray[0]);
+    const [cmps, setCmps] = useState(experiencesArray[1]);
 
       const toggleCMP = index => { 
         setCmps(experiencesArray[index])

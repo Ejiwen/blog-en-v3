@@ -9,11 +9,19 @@ const Footer = () => {
             <div className="footer-right-div">     
             <div className="logo-footer"> <img src={logo} /> </div>
             <div className="follow-me"> 
-            <FontAwesomeIcon icon={faLinkedin} size="2x" /> 
+            <a href="https://www.linkedin.com/in/ejiwen/" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" /> 
+            </a>
+            <a href="https://github.com/Ejiwen" target="_blank">
             <FontAwesomeIcon icon={faGithubSquare} size="2x" /> 
+            </a>
+            <a href="https://dev.to/ejiwen" target="_blank">
             <FontAwesomeIcon icon={faDev} size="2x" /> 
-            <FontAwesomeIcon icon={faTwitterSquare} size="2x" /> 
-            <FontAwesomeIcon icon={faYoutubeSquare} size="2x" /> 
+            </a>
+            <a href="https://www.youtube.com/channel/UCFu08838dtH-xdNMZHmAY4w" target="_blank">
+            <FontAwesomeIcon icon={faYoutubeSquare} size="2x" />
+            </a> 
+            {/* <FontAwesomeIcon icon={faTwitterSquare} size="2x" />  */}
             </div>
             </div>  
 
