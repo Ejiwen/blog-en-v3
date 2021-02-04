@@ -116,16 +116,13 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
     opacity: 0; } }
 
 .navigation__checkbox:checked ~ .navigation__menu {
-  width: 500px;
-  height: 2.5rem;
   opacity: 1;
   border-radius: 5px;
   color: white; }
 
-.navigation__checkbox:not(:checked) ~ .navigation__label {
+.navigation__label {
   position: fixed;
   top: .5rem;
-  right: 1.5rem;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -136,18 +133,11 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   cursor: pointer;
   transition: all .8s; }
 
+.navigation__checkbox:not(:checked) ~ .navigation__label {
+  right: 1.5rem; }
+
 .navigation__checkbox:checked ~ .navigation__label {
-  position: fixed;
-  top: .5rem;
-  right: .5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background-image: radial-gradient(closest-side, #b7463e, #f69d3c, #fb7d00);
-  z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer; }
+  right: .5rem; }
 
 .navigation__icon {
   position: relative;
@@ -206,26 +196,31 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
 
 .navigation__menu {
   position: fixed;
-  top: .5rem;
-  right: 1.5rem;
   border-radius: 5px;
   z-index: 1500;
   opacity: 0;
-  width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
   display: inline-flex;
   list-style: none;
-  text-align: left;
-  width: max-content;
-  position: absolute;
+  background: #b7463e;
+  position: fixed;
+  top: .5rem;
+  right: .5rem;
+  padding-right: 4rem;
+  padding-left: .5rem;
+  min-height: 2.5rem;
   align-items: center;
-  margin-top: 9px;
+  margin-left: 5rem;
+  flex-wrap: wrap;
   transition: all .2s; }
 
 .navigation__item {
-  margin-right: .6rem; }
+  margin: 0;
+  margin-right: .7rem; }
+  .navigation__item:last-child {
+    margin-right: 0; }
   .navigation__item a {
     background: none; }
 
@@ -236,39 +231,13 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
   .navigation img {
     width: 2.5rem;
     height: 2.5rem; }
-  .navigation__checkbox {
-    display: none; }
-  .navigation__checkbox:checked ~ .navigation__bg {
-    width: 420px;
-    padding-right: 1.5rem; }
-  .navigation__checkbox:checked ~ .navigation__menu {
-    width: 420px;
+  .navigation__list {
+    min-height: 2rem;
+    padding-right: 3rem;
+    font-size: .8rem; }
+  .navigation__label {
     height: 2rem;
-    opacity: 1;
-    border: 3px solid #b7463e;
-    border-radius: 5px;
-    color: white; }
-  .navigation__checkbox:not(:checked) ~ .navigation__label {
-    position: fixed;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-image: radial-gradient(closest-side, #fb7d00, #f69d3c, #b7463e);
-    z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer;
-    transition: all .8s; }
-  .navigation__checkbox:checked ~ .navigation__label {
-    position: fixed;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-image: radial-gradient(closest-side, #b7463e, #f69d3c, #fb7d00);
-    z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer; }
+    width: 2rem; }
   .navigation__icon {
     position: relative;
     margin-top: 1rem;
@@ -288,78 +257,41 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
       left: .3rem; }
     .navigation__icon::after {
       top: -.4rem;
-      left: .3rem; }
-  .navigation__checkbox:not(:checked) + .navigation__label:hover .navigation__icon::before,
-  .navigation__checkbox:not(:checked) + .navigation__label:hover .navigation__icon::after {
-    left: 0rem; }
-  .navigation__checkbox:not(:checked) + .navigation__label:hover .navigation__icon {
-    left: 0rem; }
-  .navigation__checkbox:checked + .navigation__label .navigation__icon {
-    background-color: transparent;
-    left: -.4rem; }
-  .navigation__checkbox:checked + .navigation__label .navigation__icon::after {
-    top: 0;
-    width: 1.5rem;
-    height: 3px;
-    transform: rotate(135deg); }
-  .navigation__checkbox:checked + .navigation__label .navigation__icon::before {
-    top: 0;
-    width: 1.5rem;
-    height: 3px;
-    transform: rotate(-135deg); }
-  .navigation__bg {
-    position: fixed;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 5px;
-    background-color: #b7463e;
-    z-index: 1000;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  .navigation__menu {
-    position: fixed;
-    right: 1.5rem;
-    border-radius: 5px;
-    z-index: 1500;
-    opacity: 0;
-    width: 0;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  .navigation__list {
-    margin-top: 1px; }
-  .navigation__item {
-    margin-right: .6rem; }
-    .navigation__item a {
-      background: none; }
-  .navigation__link:link, .navigation__link:visited {
-    text-decoration: none;
-    font-size: .8rem; } }
+      left: .3rem; } }
 
-@media (max-width: 540px) {
-  .navigation__checkbox:checked ~ a img {
-    width: 0;
-    display: none; }
-  .navigation__checkbox:checked ~ .navigation__menu {
-    width: 330px;
-    opacity: 1;
-    border: 3px solid #b7463e;
-    border-radius: 5px;
-    color: white; }
-  .navigation__checkbox:checked ~ .navigation__bg {
-    width: 330px;
-    padding-right: 1.5rem; }
-  .navigation__link:link, .navigation__link:visited {
-    text-decoration: none;
-    font-size: .6rem; }
-  .navigation__menu {
-    position: fixed;
-    right: 1rem;
-    border-radius: 5px;
-    z-index: 1500;
-    opacity: 0;
-    width: 0;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+@media (max-width: 550px) {
+  .navigation img {
+    width: 2.5rem;
+    height: 2.5rem; }
   .navigation__list {
-    right: 2rem;
-    margin-top: 1px; } }
+    min-height: 2rem;
+    padding-right: 3rem;
+    font-size: .5rem; }
+  .navigation__item {
+    margin-right: .5rem; }
+  .navigation__label {
+    height: 2rem;
+    width: 2rem; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+    left: -.2rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 1.1rem;
+      height: 2px;
+      background-color: white;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      transition: all .2s; }
+    .navigation__icon::before {
+      top: .4rem;
+      left: .3rem; }
+    .navigation__icon::after {
+      top: -.4rem;
+      left: .3rem; } }
 
 .wrap-writing {
   margin-top: 50px; }

@@ -17,12 +17,10 @@ const Navbar = () => {
                    <span className="navigation__icon">&nbsp;</span>
                 </label>
                 <Link to='/'> <img src={logo} /> </Link>
-               <div className="navigation__bg"></div>
+               {/* <div className="navigation__bg"></div> */}
                
             
             <div className="navigation__menu">
-                {/* <img src={logo} /> */}
-               
                 <ul className="navigation__list">
                     <li className="navigation__item"><Link className="navigation__link" to="/">Home</Link></li>
                     <li className="navigation__item"><Link className="navigation__link" to="/">About</Link></li>
