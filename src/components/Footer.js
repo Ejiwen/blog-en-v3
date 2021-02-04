@@ -24,7 +24,11 @@ const Footer = () => {
             {/* <FontAwesomeIcon icon={faTwitterSquare} size="2x" />  */}
             </div>
             </div>  
-            <form  name="contact" className="contact-form" action="" method="post">
+
+            <div className="contact-me"> 
+            
+
+            <form className="contact-form" action="" method="post" name="contact" >
             <input type="hidden" name="form-name" value="contact" />
                 <h3>Quick Contact</h3>
                 
