@@ -17,9 +17,9 @@ const Experience = () => {
           role: "Autodesk Data Analyst",
           periode: "Nov 2018 - Jan 2020",
           experience: [
-            "Provided engineering data and analysis.",
-            "Organizing data in a way that serves the company benefits better.",
-            "Provides access to the data in useful ways."
+            "Using AutoDesk vault to Provide engineering data and analysis.",
+            "Experience in data analysis with the ability to understand and interpret data.",
+            "Development of our internal big data solutions as well as the related data visualization suite."
           ],
 
         },
@@ -28,9 +28,12 @@ const Experience = () => {
           role: "Software Engineer",
           periode: "Jan 2017 - Jan 2018",
           experience: [
-            "Worked on technical problems for E-deal CRM customers (become Efficy CRM later).",
-          "Used: Java/Java EE, JavaScript/Ajax/ JQuery , JSON /Webservices, HTML/CSS",
-          "SQL,XML, Server-side debugging, Browser debugging, experience troubleshooting cross-browser compatibility issues ..."
+            "Develop highly detailed style guides using a combination of HTML, CSS, TypeScript, JavaScript and using JavaScript frameworks like Backbone and ReactJS.",
+          " Working with and building RESTful API's and GraphQL.",
+          "Lead and participate in new feature design and code reviews.",
+          "Experience with Java development frameworks such as Spring.",
+          "Fixing bugs, Suggesting improvements.",
+          "Organized and reliable, attentive to detail, able to efficiently manage multiple tasks."
         ],
 
         },
@@ -38,7 +41,13 @@ const Experience = () => {
           company: 'Hadmool',
           role: "Full Stack Developer",
           periode: "Jan 2016 - Jan 2017",
-          experience: ['Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.','Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.','Used: HTML/CSS, Javascript, PHP/MySQL,Wordpress.'],
+          experience: [
+            'Experience with PHP/MySQL and WordPress.',
+            'Proficient using web services, ajax, and JSON.',
+            'Experience with web markup, including HTML5, CSS3, JavaScript.',
+            'A good working knowledge of the Adobe Creative Suite (Photoshop and Illustrator in particular).',
+            'Practical skills using the following tools: Gulp, WebPack, Babel.'
+          ],
 
         }
       ];
