@@ -25,28 +25,32 @@ const Footer = () => {
             </div>
             </div>  
 
-            <div className="contact-me">  
-            <form className="contact-form" action="" method="post">
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="contact" />
+            <div className="contact-me"> 
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+            </form> 
+
+            <form className="contact-form" action="" method="post" name="contact">
+            <input type="hidden" name="form-name" value="contact" />
                 <h3>Quick Contact</h3>
                 
                 <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                <input placeholder="Your name" type="text" tabindex="1" name="name" required autofocus />
                 </fieldset>
                 <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                <input placeholder="Your Email Address" type="email" tabindex="2" name="email" required />
                 </fieldset>
                 
                
                 <fieldset>
-                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                <textarea placeholder="Type your Message Here...." tabindex="5" name="message" required></textarea>
                 </fieldset>
                 <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 </fieldset>
-                </form>
+                
             </form>
             </div>
 
