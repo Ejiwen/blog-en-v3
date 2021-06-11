@@ -16,7 +16,7 @@ function ProjectTmpl({name, desc, pic, linkProject, classN}) {
             <p> {desc} </p>
             </div>
             <div className={picCls}>
-            <a href={linkProject} target="_blank" > <img src={pic} /> </a>
+            <a href={linkProject} target="_blank" > <img src={pic} height="365px" /> </a>
             </div>
            
            
