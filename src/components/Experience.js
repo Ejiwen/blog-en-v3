@@ -12,6 +12,15 @@ height: 36px;
 const Experience = () => {
 
     const experiencesArray = [
+      {
+        company: 'HACKREACTOR',
+        role: "Software Engeneer",
+        periode: "2021 - ",
+        experience: [
+         
+        ],
+
+      },
         {
           company: 'KINROSS GOLD',
           role: "Autodesk Data Analyst",

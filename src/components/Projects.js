@@ -41,10 +41,11 @@ const Projects = () => {
             </div>
             
             <div className="projects__body">
-            <FontAwesomeIcon className="iconSlider" onClick={() => nextProj()} icon={faChevronLeft} size="2x" />
+            {/* <FontAwesomeIcon className="iconSlider" onClick={() => nextProj()} icon={faChevronLeft} size="2x" />
             <ProjectTmpl {...projDisplay} />
             <FontAwesomeIcon className="iconSlider" onClick={() => nextProj()} icon={faChevronRight} size="2x" />  
-            
+             */}
+             <h1 class="comingsoon"> COMING SOON </h1>
             </div>
         </div>
         </div>

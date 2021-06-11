@@ -23,6 +23,9 @@ body {
 a {
   background-image: none !important; }
 
+.comingsoon {
+  text-align: center; }
+
 header {
   background: url("../../static/images/header-mr-sf.svg") top center no-repeat;
   background-size: cover;
