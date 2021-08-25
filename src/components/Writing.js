@@ -11,7 +11,7 @@ const Writing = ({ allMdx: { nodes } }) => {
       <div className="writing">
         <div className="writing__header">
           <img src={headerWriting} />
-          <h3> My Recent Posts </h3>
+          <h3> Recent Posts </h3>
         </div>
         <div className="writing__body">
           {/* <img src="images/writing1.svg" />    */}
