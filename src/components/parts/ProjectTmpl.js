@@ -25,16 +25,22 @@ function ProjectTmpl(props) {
 
     return () => {
       resetTimeout()
+      const animeSlide = () => {
+        anime({
+          targets: ".projetTmpl__slider",
+          scale: [0.5, 1],
+          duration: 2000,
+        })
+      }
+      animeSlide();
     }
+
+
+
+
   }, [currentSlide])
 
-  const animeSlide = () => {
-    anime({
-      targets: ".projetTmpl__slider",
-      scale: [0.5, 1],
-      duration: 2000,
-    })
-  }
+
 
   return (
     <div className="projetTmpl">
@@ -91,7 +97,6 @@ function ProjectTmpl(props) {
           />
         </div>
       </div>
-      {animeSlide()}
     </div>
   )
 }
