@@ -1,5 +1,4 @@
 import React from "react"
-import anime from "animejs/lib/anime.es.js"
 import Navbar from "./Navbar"
 import styled from "@emotion/styled"
 import { bgHeader } from "../../static/images/header-mr-sf.svg"
@@ -11,14 +10,7 @@ const HeaderBttomBg = styled.div`
 `
 
 const Header = () => {
-  const animeHeader = () => {
-    anime({
-      targets: ".line-test path",
-      translateX: 250,
-      direction: "alternate",
-      loop: true,
-    })
-  }
+
   return (
     <header>
       <Navbar />
@@ -34,7 +26,7 @@ const Header = () => {
       </div>
       <img src={bgHeader} style={{ visibility: "hidden", height: "600px" }} />
       <HeaderBttomBg></HeaderBttomBg>
-      {animeHeader()}
+
     </header>
   )
 }
