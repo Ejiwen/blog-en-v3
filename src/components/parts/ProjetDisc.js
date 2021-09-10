@@ -1,2 +1,2 @@
-export const MNTIC = ``;
+export const MNTIC = ``
 export const IRBEH = ``

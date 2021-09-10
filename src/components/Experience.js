@@ -12,10 +12,15 @@ const ExperienceBttomBg = styled.div`
 const Experience = () => {
   const experiencesArray = [
     {
-      company: "HACKREACTOR",
+      company: "FREELANCE",
       role: "Software Engeneer",
       periode: "2021 - ",
-      experience: [],
+      experience: [
+        "Design and develop (Irbeh.com) E-commerce website",
+        "Design and develop (MNTIC.fr) website for a french tech company",
+        "Work on projects for clients on upwork platform",
+        "Develop highly detailed style guides using a combination of HTML, CSS and JavaScript",
+      ],
     },
     {
       company: "KINROSS GOLD",

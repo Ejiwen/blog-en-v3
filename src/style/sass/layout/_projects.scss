@@ -1,7 +1,10 @@
 .projects-wrap {
-    margin-top: 50px;
+  margin-top: 50px;
 
-.projects {
+  .active {
+    color: gold;
+  }
+  .projects {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -12,133 +15,141 @@
     // padding: 15px;
 
     &__header {
-        color:#B7463E;
-        display: flex;
-        align-items: center;
-            padding-top: 20px;
-        
+      color: #b7463e;
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
 
-        img {
-            width: 200px;
-        }
+      img {
+        width: 200px;
+      }
 
+      h3 {
+        font-size: xx-large;
+        width: 212px;
+      }
+
+      @media (max-width: 500px) {
         h3 {
-            font-size: xx-large;
-            width: 212px;
-            }
-
-            @media (max-width: 500px) {
-                h3 {
-                    font-size: x-large;
-                }
-                img {
-                    width: 100px;
-                }
-            }
-
+          font-size: x-large;
+        }
+        img {
+          width: 100px;
+        }
+      }
     }
 
     &__body {
-        display: flex;
-        align-items: center;
-        background: gold;
+      display: flex;
+      align-items: center;
+      background: gold;
 
-        .iconSlider {
-            cursor: pointer;
-            padding: 0 3px;
-            box-sizing: content-box;
-        }
+      .iconSlider {
+        cursor: pointer;
+        padding: 0 3px;
+        box-sizing: content-box;
+      }
 
-        .mnticCls {
-            opacity: 1;
-            animation-name: moveInLeft;
-            animation-duration: 1s;
-            animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
-            
-        }
-        
-        .irbehCls {
-            opacity: 1;
-            animation-name: moveInRight;
-            animation-duration: 1s;
-            animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
-            
-        }
-
-    .projetTmpl {
-        display: flex;
+      .projetTmpl {
         padding: 0 60px;
-        background: #ECF0F1;
+        background: #fff;
         color: #191818;
         border: 1px gold solid;
 
         @media screen and (max-width: 700px) {
-            flex-wrap: wrap;
-          }
+          flex-wrap: wrap;
+        }
 
         a {
-        color: inherit;
-        text-decoration: none;
-        background-image: none;
+          color: inherit;
+          text-decoration: none;
+          background-image: none;
+        }
+
+        &__slider {
+          display: flex;
+          margin: 10px;
+
+          .slider__info {
+            width: 60%;
+            &__logo {
+            }
+
+            &__description {
+              &__tools {
+                margin-top: 15px;
+                color: #1b3803;
+                padding: 2px 4px;
+
+                p {
+                  margin-bottom: 0;
+                  font-weight: bold;
+                  letter-spacing: 2px;
+                }
+
+                ul li {
+                  margin-bottom: 0;
+                  list-style: none;
+                  letter-spacing: 2px;
+
+                  svg {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
         }
 
         &__pic {
-            min-width: 50%;
-            padding-top: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          min-width: 50%;
+          padding-top: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         &__description {
-            h3 {
-                color: #1b3803;
-            }
+          h3 {
+            color: #1b3803;
+          }
         }
-    } 
+      }
     }
-
-}
+  }
 }
 
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-  
+  40% {
+    opacity: 0.4;
+  }
 
-    40% {
-        opacity: 0.4;
-    }
+  80% {
+    opacity: 0.8;
+  }
 
-   
-
-    80% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.4;
-    }
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
 
+  80% {
+    opacity: 0.8;
+  }
 
-    80% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
-

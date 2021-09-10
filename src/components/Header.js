@@ -1,4 +1,5 @@
 import React from "react"
+import anime from "animejs/lib/anime.es.js"
 import Navbar from "./Navbar"
 import styled from "@emotion/styled"
 import { bgHeader } from "../../static/images/header-mr-sf.svg"
@@ -10,32 +11,32 @@ const HeaderBttomBg = styled.div`
 `
 
 const Header = () => {
+  const animeHeader = () => {
+    anime({
+      targets: ".line-test path",
+      translateX: 250,
+      direction: "alternate",
+      loop: true,
+    })
+  }
   return (
     <header>
       <Navbar />
+
       <div className="my-bio-container">
         <div className="my-bio">
           <div>
             <p> Hi, My name is </p>
             <h3>CHEIKHANY EJIWEN</h3>
-            <p className="my-bio--role">Software Engineer in san francisco</p>
+            <p className="my-bio--role">Software Engineer in San Francisco</p>
           </div>
         </div>
       </div>
       <img src={bgHeader} style={{ visibility: "hidden", height: "600px" }} />
       <HeaderBttomBg></HeaderBttomBg>
+      {animeHeader()}
     </header>
   )
 }
 
 export default Header
-
-/*
-        import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-       import { faDev, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-       <div className="cnt-social-media">
-       <FontAwesomeIcon icon={faLinkedin} size="lg" />
-       <FontAwesomeIcon icon={faGithubSquare} size="lg"  />
-       <FontAwesomeIcon icon={faDev} size="lg"  />
-
- */
