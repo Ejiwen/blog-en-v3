@@ -27,9 +27,20 @@ function ProjectTmpl(props) {
       resetTimeout()
       const animeSlide = () => {
         anime({
-          targets: ".projetTmpl__slider",
+          targets: ".project_thumbnail",
           scale: [0.5, 1],
-          duration: 2000,
+          duration: 2500,
+        })
+
+        anime({
+          targets: ".slider__info",
+          opacity: [0,1],
+          translateX: [40,0],
+          translateZ: 0,
+          scaleX: [0.3, 1],
+          easing: "easeOutExpo",
+          duration: 2500,
+          offset: '-=600',
         })
       }
       animeSlide();
@@ -76,7 +87,7 @@ function ProjectTmpl(props) {
           <div className="slider__info__description">
             {props.projectList[currentSlide].desc}
             <div className="slider__info__description__tools">
-              <p>DEVELOPMENT TOOLS</p>
+              <p className="dev_tools">DEVELOPMENT TOOLS</p>
               <ul>
                 {props.projectList[currentSlide].tools.map(elm => (
                   <li>
@@ -91,6 +102,7 @@ function ProjectTmpl(props) {
 
         <div>
           <img
+          className="project_thumbnail"
             src={props.projectList[currentSlide].pic}
             height="365px"
             alt="picture"
