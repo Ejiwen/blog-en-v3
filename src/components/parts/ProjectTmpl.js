@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react"
 import anime from "animejs"
-import { faCheckDouble, faCircle } from "@fortawesome/free-solid-svg-icons"
+import { faCheckDouble, faCircle, faPlayCircle, faPauseCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function ProjectTmpl(props) {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [sliderStatus, setSliderStatus] = useState(true)
   const timeoutRef = useRef(null)
 
   function resetTimeout() {
@@ -14,13 +15,16 @@ function ProjectTmpl(props) {
   }
 
   useEffect(() => {
+    var delay = 3500;
+    sliderStatus ? delay=3500 : delay=9999999;
+
     resetTimeout()
     timeoutRef.current = setTimeout(
       () =>
         setCurrentSlide(prevIndex =>
           prevIndex === props.projectList.length - 1 ? 0 : prevIndex + 1
         ),
-      3500
+        delay
     )
 
     return () => {
@@ -49,11 +53,12 @@ function ProjectTmpl(props) {
 
 
 
-  }, [currentSlide])
-
+  }, [currentSlide,sliderStatus])
 
 
   return (
+
+
     <div className="projetTmpl">
       <div style={{ width: "200px", margin: "auto", color: "#191818" }}>
         {props.projectList.map(elm => {
@@ -109,6 +114,12 @@ function ProjectTmpl(props) {
           />
         </div>
       </div>
+
+      <div style={{ width: "200px", margin: "auto", color: "#191818", cursor: "pointer" }}>
+        <span onClick={() => setSliderStatus(true)}> <FontAwesomeIcon style={{ margin: "5px" }} icon={faPlayCircle} /></span>
+        <span onClick={() => setSliderStatus(false)}> <FontAwesomeIcon style={{ margin: "5px" }} icon={faPauseCircle} /></span>
+      </div>
+
     </div>
   )
 }

@@ -25,3 +25,4 @@ const Writing = ({ allMdx: { nodes } }) => {
 }
 
 export default Writing
+// <img src={headerWriting} />

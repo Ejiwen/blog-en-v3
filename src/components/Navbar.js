@@ -15,8 +15,7 @@ const Navbar = () => {
         <span className="navigation__icon">&nbsp;</span>
       </label>
       <Link to="/">
-        {" "}
-        <img src={logo} />{" "}
+        <img src={logo} />
       </Link>
       {/* <div className="navigation__bg"></div> */}
 
