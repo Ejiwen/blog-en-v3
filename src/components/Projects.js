@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import ProjectTmpl from "./parts/ProjectTmpl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import headerWorks from "../../static/images/workBg.svg"
@@ -38,6 +40,10 @@ const Projects = () => {
     },
   ]
 
+  useEffect(() => {
+    AOS.init()
+  })
+
   return (
     <div id="worky" className="projects-wrap">
       <div className="projects">
@@ -46,7 +52,7 @@ const Projects = () => {
           <h3> Recent Works </h3>
         </div>
 
-        <div className="projects__body">
+        <div className="projects__body" data-aos="fade-right">
           &nbsp;
           <ProjectTmpl projectList={projectList} />
           &nbsp;

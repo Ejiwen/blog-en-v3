@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import ExperienceTmpl from "./parts/ExperienceTmpl"
 import styled from "@emotion/styled"
 import headerExperiences from "../../static/images/experiencesBg.svg"
@@ -61,6 +63,10 @@ const Experience = () => {
     },
   ]
 
+  useEffect(() => {
+    AOS.init()
+  })
+
   const [cmps, setCmps] = useState(experiencesArray[1])
 
   const toggleCMP = index => {
@@ -74,7 +80,7 @@ const Experience = () => {
         <div className="experience__header">
           <img src={headerExperiences} /> <h3> Experiences </h3>
         </div>
-        <div className="experience__body">
+        <div className="experience__body" data-aos="fade-left">
           <div className="menu">
             <ul>
               {experiencesArray.map((cmp, i) => (
