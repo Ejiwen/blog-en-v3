@@ -26,6 +26,16 @@ const Projects = () => {
       logo: "images/IrbehLogo.svg",
       tools: ["Wordpress", "PHP", "React", "Figma", "Inkscape"],
     },
+    {
+      index: 2,
+      name: "My Portofolio",
+      desc:
+        "I built my personal website to share my latest work and project. And also write blog posts about what fascinating me in tech.",
+      linkProject: "https://cheikhanyejiwen.com/",
+      pic: "images/blogScreenShot.svg",
+      logo: "images/logoV2.svg",
+      tools: ["React", "Gatsby", "GraphQL", "SCSS", "AnimeJS", "Inkscape"],
+    },
   ]
 
   return (

@@ -13,8 +13,8 @@ const Experience = () => {
   const experiencesArray = [
     {
       company: "FREELANCE",
-      role: "Software Engeneer",
-      periode: "2021 - ",
+      role: "Software Engineer",
+      periode: "2021 - Current",
       experience: [
         "Design and develop (Irbeh.com) E-commerce website",
         "Design and develop (MNTIC.fr) website for a french tech company",
