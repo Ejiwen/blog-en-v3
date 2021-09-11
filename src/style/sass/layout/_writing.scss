@@ -1,52 +1,51 @@
 .wrap-writing {
-    margin-top: 50px;
-    //background-size: cover;
-    // background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png)
+  // margin-top: 50px;
+  //background-size: cover;
+  // background: url(http://3.bp.blogspot.com/-cJ9U2CpMOkA/TlUsnzZC8yI/AAAAAAAAaRo/B21JXw_-CGs/s1600/fancy_deboss.png)
 }
 
 .top-bg-writing {
-    background: url("../../static/images/w.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
-    background-size: cover;
-    min-height: 200px;
-    max-height: 200px;
+  background: url("../../static/images/w.svg") top center no-repeat; //coverbase5 cheese #BD5B1A
+  background-size: cover;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 .writing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  color: black;
+
+  &__header {
+    color: #b7463e;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    color: black;
+    padding-top: 20px;
 
-    &__header {
-        color:#B7463E;
-        display: flex;
-        align-items: center;
-        padding-top: 20px;
-
-        img {
-            width: 200px;
-        }
-
-        h3 {
-            font-size: xx-large;
-            width: 212px;
-            }
-
-            @media (max-width: 500px) {
-                h3 {
-                    font-size: x-large;
-                }
-                img {
-                    width: 100px;
-                }
-            }
-
+    img {
+      width: 200px;
     }
 
-    &__body {
+    h3 {
+      font-size: xx-large;
+      width: 212px;
+    }
+
+    @media (max-width: 500px) {
+      h3 {
+        font-size: x-large;
+      }
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  &__body {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,58 +53,57 @@
     margin: auto;
     color: black;
     flex-wrap: wrap;
-    
-    }
+  }
 }
 
 .post-content {
-    display: flex;
-    flex-direction: column;
-    // background-color: #E2E2E2;
-    margin: 20px;
-    flex-basis: 300px;
-    border-left: 5px solid #ffa207;
-    border-radius: 10px;
-    //box-shadow: #c7676083 5px 5px, rgba(0, 128, 0, 0.479) 10px 10px, rgba(255, 217, 0, 0.247) 15px 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;   
+  display: flex;
+  flex-direction: column;
+  // background-color: #E2E2E2;
+  margin: 20px;
+  flex-basis: 300px;
+  border-left: 5px solid #ffa207;
+  border-radius: 10px;
+  //box-shadow: #c7676083 5px 5px, rgba(0, 128, 0, 0.479) 10px 10px, rgba(255, 217, 0, 0.247) 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .post-pic {
-    min-height: 300px;
-    box-sizing: border-box;
-    position: relative;
+  min-height: 300px;
+  box-sizing: border-box;
+  position: relative;
 
-    img {
+  img {
     display: block;
     border-bottom: 1px solid #ff000000;
     border-left: 1px solid #ff000000;
     border-right: 1px solid #ff000000;
     border-radius: 10px;
-}
+  }
 }
 
 .card__svg {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .post-body {
-    border: 1px solid rgb(0, 9, 128);
-    margin:10px;
-    background-color: #fff;
+  border: 1px solid rgb(0, 9, 128);
+  margin: 10px;
+  background-color: #fff;
 }
 
-.post-info{
-    background-color: #fff;
-    padding: 0 8px 0 8px;
+.post-info {
+  background-color: #fff;
+  padding: 0 8px 0 8px;
 
-    &-title {
-        color: #BD5B1A;
-        font-weight: bolder;
-    }
+  &-title {
+    color: #bd5b1a;
+    font-weight: bolder;
+  }
 
-    &-tags {
-        display: flex;
-        justify-content: space-between;
-    }
+  &-tags {
+    display: flex;
+    justify-content: space-between;
+  }
 }

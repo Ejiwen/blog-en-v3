@@ -52,7 +52,8 @@ const Projects = () => {
           <h3> Recent Works </h3>
         </div>
 
-        <div className="projects__body" data-aos="fade-right">
+        <div className="projects__body">
+          {/*  data-aos="fade-right"  */}
           &nbsp;
           <ProjectTmpl projectList={projectList} />
           &nbsp;

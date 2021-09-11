@@ -20,7 +20,8 @@ const Writing = ({ allMdx: { nodes } }) => {
           <img src={headerWriting} />
           <h3> Recent Posts </h3>
         </div>
-        <div className="writing__body" data-aos="fade-right">
+        <div className="writing__body">
+          {/*  data-aos="fade-right"  */}
           {/* <img src="images/writing1.svg" />    */}
           {nodes.map(post => (
             <Post key={post.id} {...post} />

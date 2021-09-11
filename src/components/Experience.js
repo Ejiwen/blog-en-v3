@@ -80,7 +80,8 @@ const Experience = () => {
         <div className="experience__header">
           <img src={headerExperiences} /> <h3> Experiences </h3>
         </div>
-        <div className="experience__body" data-aos="fade-left">
+        <div className="experience__body">
+          {/*  data-aos="fade-left  */}
           <div className="menu">
             <ul>
               {experiencesArray.map((cmp, i) => (

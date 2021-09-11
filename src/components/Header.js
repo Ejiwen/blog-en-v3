@@ -27,8 +27,8 @@ const Header = () => {
   })
 
   return (
-    <header>
-      <Navbar />
+    <header style={{ position: "relative" }}>
+      <Navbar style={{ position: "absolute" }} />
 
       <div className="my-bio-container">
         <div className="my-bio">
