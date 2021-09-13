@@ -441,7 +441,8 @@ linear-gradient(to right bottom, rgba(220, 223, 17, 0.37), rgba(5, 150, 17, 0.54
       .experience-wrap .experience__body .menu {
         padding: 15px;
         flex-basis: 400px;
-        cursor: pointer; }
+        cursor: pointer;
+        flex-shrink: 3; }
         .experience-wrap .experience__body .menu ul {
           margin-left: 0; }
           .experience-wrap .experience__body .menu ul li {
