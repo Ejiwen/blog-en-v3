@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { gsap } from "gsap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faDev,
@@ -10,12 +11,12 @@ import {
 import logo from "../../static/images/logoV2-top.svg"
 
 const Footer = () => {
+  useEffect(() => {}, [])
   return (
     <footer>
       <div className="footer-right-div">
         <div className="logo-footer">
-          {" "}
-          <img src={logo} />{" "}
+          <img src={logo} />
         </div>
         <div className="follow-me">
           <a href="https://www.linkedin.com/in/ejiwen/" target="_blank">

@@ -40,9 +40,7 @@ const Projects = () => {
     },
   ]
 
-  useEffect(() => {
-    AOS.init()
-  })
+  useEffect(() => {})
 
   return (
     <div id="worky" className="projects-wrap">
