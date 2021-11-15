@@ -63,10 +63,13 @@ header {
       header .my-bio-container .my-bio p {
         margin: 0;
         font-weight: 700; }
+      header .my-bio-container .my-bio--begin {
+        border-bottom: 2px solid black; }
+      header .my-bio-container .my-bio--fin {
+        border-top: 2px solid black; }
       header .my-bio-container .my-bio--role {
         font-weight: 700;
         letter-spacing: 0.3rem;
-        word-spacing: 0.5rem;
         background-color: #fef06973;
         border-left: 2px solid #fef06973;
         box-sizing: content-box; }

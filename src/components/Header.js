@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 import anime from "animejs"
 import Navbar from "./Navbar"
+import { gsap } from "gsap"
 import styled from "@emotion/styled"
 import { bgHeader } from "../../static/images/header-mr-sf.svg"
 
@@ -12,6 +13,9 @@ const HeaderBttomBg = styled.div`
 
 const Header = () => {
   useEffect(() => {
+    gsap.from(".my-bio--begin", { width: 0, delay: 1, duration: 3 })
+    gsap.from(".my-bio--fin", { width: 0, delay: 1, duration: 3 })
+
     const animeSlide = () => {
       anime({
         targets: ".ml2 .letter",
@@ -24,7 +28,7 @@ const Header = () => {
       })
     }
     animeSlide()
-  })
+  }, [])
 
   return (
     <header style={{ position: "relative" }}>
@@ -52,7 +56,10 @@ const Header = () => {
               <span className="letter">E</span>
               <span className="letter">N</span>
             </h3>
+
+            <p className="my-bio--begin"></p>
             <p className="my-bio--role">Software Engineer in San Francisco</p>
+            <p className="my-bio--fin"></p>
           </div>
         </div>
       </div>
