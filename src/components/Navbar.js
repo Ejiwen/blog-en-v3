@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
+import { gsap } from "gsap"
 import React, { useEffect } from "react"
 import logo from "../../static/images/logoV2-top.svg"
 
 const Navbar = () => {
   useEffect(() => {
-    console.log("render!")
     const checky = document.querySelector("#checkLabel")
     checky.checked = true
   })
@@ -15,7 +15,7 @@ const Navbar = () => {
         <span className="navigation__icon">&nbsp;</span>
       </label>
       <Link to="/">
-        <img src={logo} />
+        <img className="blogLogo" src={logo} />
       </Link>
 
       {/* <div className="navigation__bg"></div> */}
